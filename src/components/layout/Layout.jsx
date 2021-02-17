@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import styled from 'styled-components';
 import Head from 'next/head';
-import FootBar from './footBar';
+import FootBar from './FootBar';
 
 const StyledWrapper = styled.div`
   display: flex;
