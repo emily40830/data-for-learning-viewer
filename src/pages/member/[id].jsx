@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { formatUserName } from '../../util';
 import ChartCard from '../../components/common/ChartCard';
 import SingleValueCard from '../../components/chart/SingleValueCard';
+import membersInfo from '../../../public/user_list.json';
 
 const Container = styled.div`
   display: grid;
@@ -123,8 +124,7 @@ const Member = ({ member }) => {
 export default Member;
 
 export const getServerSideProps = async ({ params }) => {
-  const res = await fetch(`${baseURL}user_list.json`);
-  const membersInfo = await res.json();
+  //process.env.FOO
 
   const member = membersInfo.filter(
     (memberInfo) => memberInfo.member_id === params.id,
