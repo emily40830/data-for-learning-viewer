@@ -1,0 +1,52 @@
+[
+	{
+		"member_id" : "1a61f4df-6945-4242-81e1-6255ed2767d6",
+		"last_viewing_date" : "2021-02-15",
+		"total_viewing_hr" : 268.25
+	},
+	{
+		"member_id" : "9e2c17e8-46ed-4e99-8df5-f6f3e8608c40",
+		"last_viewing_date" : "2021-02-08",
+		"total_viewing_hr" : 266.78
+	},
+	{
+		"member_id" : "973be704-6a12-40bf-9196-37072a08ce00",
+		"last_viewing_date" : "2021-02-15",
+		"total_viewing_hr" : 246.62
+	},
+	{
+		"member_id" : "d08f229a-1574-4000-8a90-5e0e82460528",
+		"last_viewing_date" : "2021-02-12",
+		"total_viewing_hr" : 241.12
+	},
+	{
+		"member_id" : "5d2d2ceb-cdfe-451f-8b5e-4b9f4647181f",
+		"last_viewing_date" : "2020-12-08",
+		"total_viewing_hr" : 180.10
+	},
+	{
+		"member_id" : "74fb3cbb-7d18-4ef3-924e-d4f6804909ce",
+		"last_viewing_date" : "2021-02-09",
+		"total_viewing_hr" : 96.47
+	},
+	{
+		"member_id" : "58507c03-99e4-4ae6-87b7-0d68f73704e1",
+		"last_viewing_date" : "2020-11-18",
+		"total_viewing_hr" : 92.55
+	},
+	{
+		"member_id" : "740c5e77-7b59-468d-a76e-05e27ac547b9",
+		"last_viewing_date" : "2020-12-08",
+		"total_viewing_hr" : 87.42
+	},
+	{
+		"member_id" : "55ec1ce7-80df-4c5e-bced-dbfeadebfd8a",
+		"last_viewing_date" : "2021-01-10",
+		"total_viewing_hr" : 81.58
+	},
+	{
+		"member_id" : "8aee59ed-589b-4213-b5c5-2be1b06174dc",
+		"last_viewing_date" : "2021-01-16",
+		"total_viewing_hr" : 81.12
+	}
+]

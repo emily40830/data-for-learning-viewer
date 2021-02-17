@@ -1,0 +1,1157 @@
+[
+	{
+		"date" : "2020-12-17",
+		"start_learners" : 143,
+		"completed_cnt" : 112,
+		"learning_10_min_in_a_day" : 90,
+		"learning_30_min_in_a_day" : 54
+	},
+	{
+		"date" : "2021-01-23",
+		"start_learners" : 138,
+		"completed_cnt" : 118,
+		"learning_10_min_in_a_day" : 112,
+		"learning_30_min_in_a_day" : 73
+	},
+	{
+		"date" : "2021-02-14",
+		"start_learners" : 101,
+		"completed_cnt" : 96,
+		"learning_10_min_in_a_day" : 86,
+		"learning_30_min_in_a_day" : 61
+	},
+	{
+		"date" : "2021-01-16",
+		"start_learners" : 114,
+		"completed_cnt" : 91,
+		"learning_10_min_in_a_day" : 81,
+		"learning_30_min_in_a_day" : 55
+	},
+	{
+		"date" : "2020-11-14",
+		"start_learners" : 93,
+		"completed_cnt" : 80,
+		"learning_10_min_in_a_day" : 71,
+		"learning_30_min_in_a_day" : 48
+	},
+	{
+		"date" : "2021-02-11",
+		"start_learners" : 112,
+		"completed_cnt" : 99,
+		"learning_10_min_in_a_day" : 90,
+		"learning_30_min_in_a_day" : 57
+	},
+	{
+		"date" : "2020-11-04",
+		"start_learners" : 143,
+		"completed_cnt" : 116,
+		"learning_10_min_in_a_day" : 100,
+		"learning_30_min_in_a_day" : 73
+	},
+	{
+		"date" : "2021-02-13",
+		"start_learners" : 101,
+		"completed_cnt" : 89,
+		"learning_10_min_in_a_day" : 85,
+		"learning_30_min_in_a_day" : 61
+	},
+	{
+		"date" : "2020-10-27",
+		"start_learners" : 172,
+		"completed_cnt" : 135,
+		"learning_10_min_in_a_day" : 123,
+		"learning_30_min_in_a_day" : 85
+	},
+	{
+		"date" : "2021-02-12",
+		"start_learners" : 102,
+		"completed_cnt" : 91,
+		"learning_10_min_in_a_day" : 84,
+		"learning_30_min_in_a_day" : 56
+	},
+	{
+		"date" : "2020-12-26",
+		"start_learners" : 154,
+		"completed_cnt" : 105,
+		"learning_10_min_in_a_day" : 88,
+		"learning_30_min_in_a_day" : 73
+	},
+	{
+		"date" : "2021-01-28",
+		"start_learners" : 162,
+		"completed_cnt" : 138,
+		"learning_10_min_in_a_day" : 119,
+		"learning_30_min_in_a_day" : 87
+	},
+	{
+		"date" : "2020-12-23",
+		"start_learners" : 198,
+		"completed_cnt" : 132,
+		"learning_10_min_in_a_day" : 113,
+		"learning_30_min_in_a_day" : 74
+	},
+	{
+		"date" : "2020-12-24",
+		"start_learners" : 196,
+		"completed_cnt" : 152,
+		"learning_10_min_in_a_day" : 135,
+		"learning_30_min_in_a_day" : 100
+	},
+	{
+		"date" : "2020-09-12",
+		"start_learners" : 78,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-10-03",
+		"start_learners" : 228,
+		"completed_cnt" : 157,
+		"learning_10_min_in_a_day" : 143,
+		"learning_30_min_in_a_day" : 131
+	},
+	{
+		"date" : "2020-11-11",
+		"start_learners" : 135,
+		"completed_cnt" : 106,
+		"learning_10_min_in_a_day" : 92,
+		"learning_30_min_in_a_day" : 53
+	},
+	{
+		"date" : "2020-09-14",
+		"start_learners" : 126,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-12-11",
+		"start_learners" : 125,
+		"completed_cnt" : 106,
+		"learning_10_min_in_a_day" : 79,
+		"learning_30_min_in_a_day" : 53
+	},
+	{
+		"date" : "2021-01-08",
+		"start_learners" : 178,
+		"completed_cnt" : 139,
+		"learning_10_min_in_a_day" : 113,
+		"learning_30_min_in_a_day" : 77
+	},
+	{
+		"date" : "2020-10-30",
+		"start_learners" : 166,
+		"completed_cnt" : 115,
+		"learning_10_min_in_a_day" : 100,
+		"learning_30_min_in_a_day" : 64
+	},
+	{
+		"date" : "2020-11-06",
+		"start_learners" : 108,
+		"completed_cnt" : 81,
+		"learning_10_min_in_a_day" : 69,
+		"learning_30_min_in_a_day" : 51
+	},
+	{
+		"date" : "2020-09-22",
+		"start_learners" : 125,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-10-13",
+		"start_learners" : 266,
+		"completed_cnt" : 212,
+		"learning_10_min_in_a_day" : 182,
+		"learning_30_min_in_a_day" : 141
+	},
+	{
+		"date" : "2020-10-12",
+		"start_learners" : 310,
+		"completed_cnt" : 203,
+		"learning_10_min_in_a_day" : 151,
+		"learning_30_min_in_a_day" : 119
+	},
+	{
+		"date" : "2020-12-22",
+		"start_learners" : 200,
+		"completed_cnt" : 167,
+		"learning_10_min_in_a_day" : 131,
+		"learning_30_min_in_a_day" : 91
+	},
+	{
+		"date" : "2020-09-29",
+		"start_learners" : 225,
+		"completed_cnt" : 171,
+		"learning_10_min_in_a_day" : 146,
+		"learning_30_min_in_a_day" : 103
+	},
+	{
+		"date" : "2020-12-18",
+		"start_learners" : 146,
+		"completed_cnt" : 123,
+		"learning_10_min_in_a_day" : 86,
+		"learning_30_min_in_a_day" : 58
+	},
+	{
+		"date" : "2020-10-11",
+		"start_learners" : 246,
+		"completed_cnt" : 176,
+		"learning_10_min_in_a_day" : 166,
+		"learning_30_min_in_a_day" : 144
+	},
+	{
+		"date" : "2021-01-10",
+		"start_learners" : 151,
+		"completed_cnt" : 129,
+		"learning_10_min_in_a_day" : 115,
+		"learning_30_min_in_a_day" : 98
+	},
+	{
+		"date" : "2020-12-05",
+		"start_learners" : 104,
+		"completed_cnt" : 82,
+		"learning_10_min_in_a_day" : 68,
+		"learning_30_min_in_a_day" : 35
+	},
+	{
+		"date" : "2021-02-05",
+		"start_learners" : 114,
+		"completed_cnt" : 88,
+		"learning_10_min_in_a_day" : 71,
+		"learning_30_min_in_a_day" : 46
+	},
+	{
+		"date" : "2020-09-21",
+		"start_learners" : 130,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-12-03",
+		"start_learners" : 147,
+		"completed_cnt" : 122,
+		"learning_10_min_in_a_day" : 100,
+		"learning_30_min_in_a_day" : 55
+	},
+	{
+		"date" : "2021-01-30",
+		"start_learners" : 129,
+		"completed_cnt" : 102,
+		"learning_10_min_in_a_day" : 91,
+		"learning_30_min_in_a_day" : 58
+	},
+	{
+		"date" : "2020-09-09",
+		"start_learners" : 110,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-09-07",
+		"start_learners" : 109,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-10-15",
+		"start_learners" : 261,
+		"completed_cnt" : 217,
+		"learning_10_min_in_a_day" : 190,
+		"learning_30_min_in_a_day" : 162
+	},
+	{
+		"date" : "2020-11-02",
+		"start_learners" : 162,
+		"completed_cnt" : 122,
+		"learning_10_min_in_a_day" : 106,
+		"learning_30_min_in_a_day" : 71
+	},
+	{
+		"date" : "2020-10-22",
+		"start_learners" : 187,
+		"completed_cnt" : 147,
+		"learning_10_min_in_a_day" : 140,
+		"learning_30_min_in_a_day" : 113
+	},
+	{
+		"date" : "2020-11-18",
+		"start_learners" : 148,
+		"completed_cnt" : 115,
+		"learning_10_min_in_a_day" : 106,
+		"learning_30_min_in_a_day" : 61
+	},
+	{
+		"date" : "2021-02-04",
+		"start_learners" : 162,
+		"completed_cnt" : 142,
+		"learning_10_min_in_a_day" : 128,
+		"learning_30_min_in_a_day" : 81
+	},
+	{
+		"date" : "2020-09-27",
+		"start_learners" : 126,
+		"completed_cnt" : 101,
+		"learning_10_min_in_a_day" : 82,
+		"learning_30_min_in_a_day" : 52
+	},
+	{
+		"date" : "2021-01-15",
+		"start_learners" : 105,
+		"completed_cnt" : 87,
+		"learning_10_min_in_a_day" : 73,
+		"learning_30_min_in_a_day" : 53
+	},
+	{
+		"date" : "2020-09-16",
+		"start_learners" : 104,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2021-01-21",
+		"start_learners" : 147,
+		"completed_cnt" : 128,
+		"learning_10_min_in_a_day" : 113,
+		"learning_30_min_in_a_day" : 76
+	},
+	{
+		"date" : "2020-11-07",
+		"start_learners" : 104,
+		"completed_cnt" : 81,
+		"learning_10_min_in_a_day" : 70,
+		"learning_30_min_in_a_day" : 43
+	},
+	{
+		"date" : "2020-09-26",
+		"start_learners" : 112,
+		"completed_cnt" : 94,
+		"learning_10_min_in_a_day" : 80,
+		"learning_30_min_in_a_day" : 52
+	},
+	{
+		"date" : "2021-01-24",
+		"start_learners" : 151,
+		"completed_cnt" : 140,
+		"learning_10_min_in_a_day" : 124,
+		"learning_30_min_in_a_day" : 94
+	},
+	{
+		"date" : "2020-11-17",
+		"start_learners" : 130,
+		"completed_cnt" : 108,
+		"learning_10_min_in_a_day" : 89,
+		"learning_30_min_in_a_day" : 67
+	},
+	{
+		"date" : "2020-09-17",
+		"start_learners" : 103,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-12-10",
+		"start_learners" : 154,
+		"completed_cnt" : 127,
+		"learning_10_min_in_a_day" : 96,
+		"learning_30_min_in_a_day" : 61
+	},
+	{
+		"date" : "2020-12-27",
+		"start_learners" : 155,
+		"completed_cnt" : 126,
+		"learning_10_min_in_a_day" : 113,
+		"learning_30_min_in_a_day" : 99
+	},
+	{
+		"date" : "2020-12-21",
+		"start_learners" : 220,
+		"completed_cnt" : 169,
+		"learning_10_min_in_a_day" : 136,
+		"learning_30_min_in_a_day" : 96
+	},
+	{
+		"date" : "2020-10-26",
+		"start_learners" : 210,
+		"completed_cnt" : 159,
+		"learning_10_min_in_a_day" : 131,
+		"learning_30_min_in_a_day" : 99
+	},
+	{
+		"date" : "2020-11-23",
+		"start_learners" : 140,
+		"completed_cnt" : 120,
+		"learning_10_min_in_a_day" : 102,
+		"learning_30_min_in_a_day" : 65
+	},
+	{
+		"date" : "2020-12-19",
+		"start_learners" : 113,
+		"completed_cnt" : 89,
+		"learning_10_min_in_a_day" : 69,
+		"learning_30_min_in_a_day" : 45
+	},
+	{
+		"date" : "2020-12-14",
+		"start_learners" : 165,
+		"completed_cnt" : 133,
+		"learning_10_min_in_a_day" : 98,
+		"learning_30_min_in_a_day" : 57
+	},
+	{
+		"date" : "2020-11-09",
+		"start_learners" : 152,
+		"completed_cnt" : 119,
+		"learning_10_min_in_a_day" : 103,
+		"learning_30_min_in_a_day" : 65
+	},
+	{
+		"date" : "2021-01-26",
+		"start_learners" : 162,
+		"completed_cnt" : 134,
+		"learning_10_min_in_a_day" : 118,
+		"learning_30_min_in_a_day" : 85
+	},
+	{
+		"date" : "2020-09-19",
+		"start_learners" : 82,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-10-21",
+		"start_learners" : 216,
+		"completed_cnt" : 172,
+		"learning_10_min_in_a_day" : 151,
+		"learning_30_min_in_a_day" : 113
+	},
+	{
+		"date" : "2020-10-14",
+		"start_learners" : 292,
+		"completed_cnt" : 188,
+		"learning_10_min_in_a_day" : 146,
+		"learning_30_min_in_a_day" : 125
+	},
+	{
+		"date" : "2021-02-01",
+		"start_learners" : 168,
+		"completed_cnt" : 139,
+		"learning_10_min_in_a_day" : 125,
+		"learning_30_min_in_a_day" : 81
+	},
+	{
+		"date" : "2020-11-12",
+		"start_learners" : 141,
+		"completed_cnt" : 121,
+		"learning_10_min_in_a_day" : 97,
+		"learning_30_min_in_a_day" : 56
+	},
+	{
+		"date" : "2020-10-20",
+		"start_learners" : 204,
+		"completed_cnt" : 163,
+		"learning_10_min_in_a_day" : 143,
+		"learning_30_min_in_a_day" : 102
+	},
+	{
+		"date" : "2020-11-25",
+		"start_learners" : 136,
+		"completed_cnt" : 113,
+		"learning_10_min_in_a_day" : 94,
+		"learning_30_min_in_a_day" : 58
+	},
+	{
+		"date" : "2020-09-05",
+		"start_learners" : 80,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2021-01-04",
+		"start_learners" : 192,
+		"completed_cnt" : 139,
+		"learning_10_min_in_a_day" : 124,
+		"learning_30_min_in_a_day" : 84
+	},
+	{
+		"date" : "2021-01-27",
+		"start_learners" : 151,
+		"completed_cnt" : 130,
+		"learning_10_min_in_a_day" : 125,
+		"learning_30_min_in_a_day" : 88
+	},
+	{
+		"date" : "2021-01-12",
+		"start_learners" : 144,
+		"completed_cnt" : 115,
+		"learning_10_min_in_a_day" : 105,
+		"learning_30_min_in_a_day" : 65
+	},
+	{
+		"date" : "2020-10-17",
+		"start_learners" : 249,
+		"completed_cnt" : 197,
+		"learning_10_min_in_a_day" : 180,
+		"learning_30_min_in_a_day" : 154
+	},
+	{
+		"date" : "2021-01-02",
+		"start_learners" : 122,
+		"completed_cnt" : 81,
+		"learning_10_min_in_a_day" : 67,
+		"learning_30_min_in_a_day" : 42
+	},
+	{
+		"date" : "2020-11-19",
+		"start_learners" : 130,
+		"completed_cnt" : 104,
+		"learning_10_min_in_a_day" : 84,
+		"learning_30_min_in_a_day" : 54
+	},
+	{
+		"date" : "2020-10-24",
+		"start_learners" : 170,
+		"completed_cnt" : 124,
+		"learning_10_min_in_a_day" : 112,
+		"learning_30_min_in_a_day" : 88
+	},
+	{
+		"date" : "2020-10-07",
+		"start_learners" : 269,
+		"completed_cnt" : 196,
+		"learning_10_min_in_a_day" : 182,
+		"learning_30_min_in_a_day" : 150
+	},
+	{
+		"date" : "2021-01-22",
+		"start_learners" : 137,
+		"completed_cnt" : 111,
+		"learning_10_min_in_a_day" : 98,
+		"learning_30_min_in_a_day" : 65
+	},
+	{
+		"date" : "2020-12-02",
+		"start_learners" : 149,
+		"completed_cnt" : 119,
+		"learning_10_min_in_a_day" : 97,
+		"learning_30_min_in_a_day" : 63
+	},
+	{
+		"date" : "2020-11-21",
+		"start_learners" : 92,
+		"completed_cnt" : 72,
+		"learning_10_min_in_a_day" : 65,
+		"learning_30_min_in_a_day" : 44
+	},
+	{
+		"date" : "2020-09-25",
+		"start_learners" : 112,
+		"completed_cnt" : 85,
+		"learning_10_min_in_a_day" : 69,
+		"learning_30_min_in_a_day" : 46
+	},
+	{
+		"date" : "2020-10-09",
+		"start_learners" : 179,
+		"completed_cnt" : 102,
+		"learning_10_min_in_a_day" : 88,
+		"learning_30_min_in_a_day" : 64
+	},
+	{
+		"date" : "2020-12-06",
+		"start_learners" : 110,
+		"completed_cnt" : 85,
+		"learning_10_min_in_a_day" : 72,
+		"learning_30_min_in_a_day" : 46
+	},
+	{
+		"date" : "2020-11-22",
+		"start_learners" : 104,
+		"completed_cnt" : 84,
+		"learning_10_min_in_a_day" : 71,
+		"learning_30_min_in_a_day" : 49
+	},
+	{
+		"date" : "2020-11-15",
+		"start_learners" : 105,
+		"completed_cnt" : 89,
+		"learning_10_min_in_a_day" : 74,
+		"learning_30_min_in_a_day" : 48
+	},
+	{
+		"date" : "2021-01-18",
+		"start_learners" : 160,
+		"completed_cnt" : 135,
+		"learning_10_min_in_a_day" : 119,
+		"learning_30_min_in_a_day" : 78
+	},
+	{
+		"date" : "2020-12-25",
+		"start_learners" : 192,
+		"completed_cnt" : 151,
+		"learning_10_min_in_a_day" : 133,
+		"learning_30_min_in_a_day" : 89
+	},
+	{
+		"date" : "2020-11-08",
+		"start_learners" : 118,
+		"completed_cnt" : 91,
+		"learning_10_min_in_a_day" : 80,
+		"learning_30_min_in_a_day" : 62
+	},
+	{
+		"date" : "2020-09-13",
+		"start_learners" : 80,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-10-18",
+		"start_learners" : 310,
+		"completed_cnt" : 232,
+		"learning_10_min_in_a_day" : 222,
+		"learning_30_min_in_a_day" : 191
+	},
+	{
+		"date" : "2021-01-19",
+		"start_learners" : 181,
+		"completed_cnt" : 141,
+		"learning_10_min_in_a_day" : 129,
+		"learning_30_min_in_a_day" : 94
+	},
+	{
+		"date" : "2020-12-07",
+		"start_learners" : 158,
+		"completed_cnt" : 133,
+		"learning_10_min_in_a_day" : 109,
+		"learning_30_min_in_a_day" : 66
+	},
+	{
+		"date" : "2020-11-13",
+		"start_learners" : 138,
+		"completed_cnt" : 110,
+		"learning_10_min_in_a_day" : 97,
+		"learning_30_min_in_a_day" : 69
+	},
+	{
+		"date" : "2021-01-11",
+		"start_learners" : 150,
+		"completed_cnt" : 123,
+		"learning_10_min_in_a_day" : 111,
+		"learning_30_min_in_a_day" : 77
+	},
+	{
+		"date" : "2021-01-31",
+		"start_learners" : 158,
+		"completed_cnt" : 130,
+		"learning_10_min_in_a_day" : 119,
+		"learning_30_min_in_a_day" : 80
+	},
+	{
+		"date" : "2021-02-15",
+		"start_learners" : 54,
+		"completed_cnt" : 48,
+		"learning_10_min_in_a_day" : 43,
+		"learning_30_min_in_a_day" : 25
+	},
+	{
+		"date" : "2020-12-29",
+		"start_learners" : 212,
+		"completed_cnt" : 169,
+		"learning_10_min_in_a_day" : 145,
+		"learning_30_min_in_a_day" : 103
+	},
+	{
+		"date" : "2021-02-06",
+		"start_learners" : 134,
+		"completed_cnt" : 108,
+		"learning_10_min_in_a_day" : 101,
+		"learning_30_min_in_a_day" : 73
+	},
+	{
+		"date" : "2020-12-30",
+		"start_learners" : 164,
+		"completed_cnt" : 123,
+		"learning_10_min_in_a_day" : 105,
+		"learning_30_min_in_a_day" : 85
+	},
+	{
+		"date" : "2021-02-10",
+		"start_learners" : 103,
+		"completed_cnt" : 84,
+		"learning_10_min_in_a_day" : 66,
+		"learning_30_min_in_a_day" : 46
+	},
+	{
+		"date" : "2020-10-06",
+		"start_learners" : 235,
+		"completed_cnt" : 200,
+		"learning_10_min_in_a_day" : 171,
+		"learning_30_min_in_a_day" : 138
+	},
+	{
+		"date" : "2021-02-03",
+		"start_learners" : 163,
+		"completed_cnt" : 140,
+		"learning_10_min_in_a_day" : 121,
+		"learning_30_min_in_a_day" : 81
+	},
+	{
+		"date" : "2021-02-09",
+		"start_learners" : 129,
+		"completed_cnt" : 116,
+		"learning_10_min_in_a_day" : 102,
+		"learning_30_min_in_a_day" : 62
+	},
+	{
+		"date" : "2020-09-06",
+		"start_learners" : 84,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2021-01-25",
+		"start_learners" : 178,
+		"completed_cnt" : 158,
+		"learning_10_min_in_a_day" : 137,
+		"learning_30_min_in_a_day" : 97
+	},
+	{
+		"date" : "2020-11-03",
+		"start_learners" : 156,
+		"completed_cnt" : 119,
+		"learning_10_min_in_a_day" : 95,
+		"learning_30_min_in_a_day" : 65
+	},
+	{
+		"date" : "2020-12-08",
+		"start_learners" : 825,
+		"completed_cnt" : 803,
+		"learning_10_min_in_a_day" : 536,
+		"learning_30_min_in_a_day" : 263
+	},
+	{
+		"date" : "2020-12-20",
+		"start_learners" : 142,
+		"completed_cnt" : 117,
+		"learning_10_min_in_a_day" : 86,
+		"learning_30_min_in_a_day" : 61
+	},
+	{
+		"date" : "2020-12-16",
+		"start_learners" : 150,
+		"completed_cnt" : 126,
+		"learning_10_min_in_a_day" : 98,
+		"learning_30_min_in_a_day" : 60
+	},
+	{
+		"date" : "2021-01-07",
+		"start_learners" : 170,
+		"completed_cnt" : 142,
+		"learning_10_min_in_a_day" : 129,
+		"learning_30_min_in_a_day" : 86
+	},
+	{
+		"date" : "2021-01-13",
+		"start_learners" : 145,
+		"completed_cnt" : 122,
+		"learning_10_min_in_a_day" : 96,
+		"learning_30_min_in_a_day" : 61
+	},
+	{
+		"date" : "2020-12-04",
+		"start_learners" : 105,
+		"completed_cnt" : 86,
+		"learning_10_min_in_a_day" : 67,
+		"learning_30_min_in_a_day" : 51
+	},
+	{
+		"date" : "2021-01-03",
+		"start_learners" : 135,
+		"completed_cnt" : 106,
+		"learning_10_min_in_a_day" : 88,
+		"learning_30_min_in_a_day" : 60
+	},
+	{
+		"date" : "2020-11-24",
+		"start_learners" : 154,
+		"completed_cnt" : 121,
+		"learning_10_min_in_a_day" : 112,
+		"learning_30_min_in_a_day" : 79
+	},
+	{
+		"date" : "2020-11-01",
+		"start_learners" : 171,
+		"completed_cnt" : 138,
+		"learning_10_min_in_a_day" : 124,
+		"learning_30_min_in_a_day" : 99
+	},
+	{
+		"date" : "2020-12-31",
+		"start_learners" : 113,
+		"completed_cnt" : 90,
+		"learning_10_min_in_a_day" : 91,
+		"learning_30_min_in_a_day" : 66
+	},
+	{
+		"date" : "2020-09-18",
+		"start_learners" : 97,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-10-29",
+		"start_learners" : 194,
+		"completed_cnt" : 155,
+		"learning_10_min_in_a_day" : 135,
+		"learning_30_min_in_a_day" : 97
+	},
+	{
+		"date" : "2021-02-07",
+		"start_learners" : 136,
+		"completed_cnt" : 119,
+		"learning_10_min_in_a_day" : 108,
+		"learning_30_min_in_a_day" : 71
+	},
+	{
+		"date" : "2020-10-16",
+		"start_learners" : 301,
+		"completed_cnt" : 187,
+		"learning_10_min_in_a_day" : 166,
+		"learning_30_min_in_a_day" : 134
+	},
+	{
+		"date" : "2021-01-09",
+		"start_learners" : 159,
+		"completed_cnt" : 125,
+		"learning_10_min_in_a_day" : 112,
+		"learning_30_min_in_a_day" : 89
+	},
+	{
+		"date" : "2020-10-04",
+		"start_learners" : 255,
+		"completed_cnt" : 174,
+		"learning_10_min_in_a_day" : 164,
+		"learning_30_min_in_a_day" : 133
+	},
+	{
+		"date" : "2020-10-08",
+		"start_learners" : 241,
+		"completed_cnt" : 177,
+		"learning_10_min_in_a_day" : 171,
+		"learning_30_min_in_a_day" : 137
+	},
+	{
+		"date" : "2020-11-26",
+		"start_learners" : 128,
+		"completed_cnt" : 99,
+		"learning_10_min_in_a_day" : 85,
+		"learning_30_min_in_a_day" : 58
+	},
+	{
+		"date" : "2020-10-23",
+		"start_learners" : 164,
+		"completed_cnt" : 114,
+		"learning_10_min_in_a_day" : 95,
+		"learning_30_min_in_a_day" : 70
+	},
+	{
+		"date" : "2020-11-30",
+		"start_learners" : 155,
+		"completed_cnt" : 125,
+		"learning_10_min_in_a_day" : 101,
+		"learning_30_min_in_a_day" : 70
+	},
+	{
+		"date" : "2020-09-11",
+		"start_learners" : 87,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-09-30",
+		"start_learners" : 259,
+		"completed_cnt" : 140,
+		"learning_10_min_in_a_day" : 118,
+		"learning_30_min_in_a_day" : 82
+	},
+	{
+		"date" : "2021-01-05",
+		"start_learners" : 219,
+		"completed_cnt" : 155,
+		"learning_10_min_in_a_day" : 138,
+		"learning_30_min_in_a_day" : 98
+	},
+	{
+		"date" : "2020-12-28",
+		"start_learners" : 184,
+		"completed_cnt" : 141,
+		"learning_10_min_in_a_day" : 114,
+		"learning_30_min_in_a_day" : 81
+	},
+	{
+		"date" : "2020-11-10",
+		"start_learners" : 148,
+		"completed_cnt" : 119,
+		"learning_10_min_in_a_day" : 98,
+		"learning_30_min_in_a_day" : 58
+	},
+	{
+		"date" : "2020-11-20",
+		"start_learners" : 105,
+		"completed_cnt" : 86,
+		"learning_10_min_in_a_day" : 71,
+		"learning_30_min_in_a_day" : 44
+	},
+	{
+		"date" : "2021-02-08",
+		"start_learners" : 128,
+		"completed_cnt" : 109,
+		"learning_10_min_in_a_day" : 100,
+		"learning_30_min_in_a_day" : 79
+	},
+	{
+		"date" : "2020-11-27",
+		"start_learners" : 119,
+		"completed_cnt" : 100,
+		"learning_10_min_in_a_day" : 83,
+		"learning_30_min_in_a_day" : 57
+	},
+	{
+		"date" : "2020-10-02",
+		"start_learners" : 249,
+		"completed_cnt" : 177,
+		"learning_10_min_in_a_day" : 160,
+		"learning_30_min_in_a_day" : 129
+	},
+	{
+		"date" : "2020-11-29",
+		"start_learners" : 127,
+		"completed_cnt" : 102,
+		"learning_10_min_in_a_day" : 87,
+		"learning_30_min_in_a_day" : 63
+	},
+	{
+		"date" : "2021-01-20",
+		"start_learners" : 153,
+		"completed_cnt" : 127,
+		"learning_10_min_in_a_day" : 113,
+		"learning_30_min_in_a_day" : 70
+	},
+	{
+		"date" : "2020-09-24",
+		"start_learners" : 131,
+		"completed_cnt" : 106,
+		"learning_10_min_in_a_day" : 88,
+		"learning_30_min_in_a_day" : 51
+	},
+	{
+		"date" : "2020-10-25",
+		"start_learners" : 189,
+		"completed_cnt" : 148,
+		"learning_10_min_in_a_day" : 136,
+		"learning_30_min_in_a_day" : 117
+	},
+	{
+		"date" : "2020-12-13",
+		"start_learners" : 111,
+		"completed_cnt" : 99,
+		"learning_10_min_in_a_day" : 78,
+		"learning_30_min_in_a_day" : 48
+	},
+	{
+		"date" : "2021-01-17",
+		"start_learners" : 137,
+		"completed_cnt" : 107,
+		"learning_10_min_in_a_day" : 105,
+		"learning_30_min_in_a_day" : 73
+	},
+	{
+		"date" : "2020-10-05",
+		"start_learners" : 273,
+		"completed_cnt" : 174,
+		"learning_10_min_in_a_day" : 158,
+		"learning_30_min_in_a_day" : 124
+	},
+	{
+		"date" : "2020-09-23",
+		"start_learners" : 4167,
+		"completed_cnt" : 3780,
+		"learning_10_min_in_a_day" : 3411,
+		"learning_30_min_in_a_day" : 3075
+	},
+	{
+		"date" : "2021-01-29",
+		"start_learners" : 154,
+		"completed_cnt" : 126,
+		"learning_10_min_in_a_day" : 108,
+		"learning_30_min_in_a_day" : 71
+	},
+	{
+		"date" : "2020-10-01",
+		"start_learners" : 214,
+		"completed_cnt" : 175,
+		"learning_10_min_in_a_day" : 148,
+		"learning_30_min_in_a_day" : 117
+	},
+	{
+		"date" : "2021-01-01",
+		"start_learners" : 65,
+		"completed_cnt" : 53,
+		"learning_10_min_in_a_day" : 44,
+		"learning_30_min_in_a_day" : 33
+	},
+	{
+		"date" : "2021-01-14",
+		"start_learners" : 124,
+		"completed_cnt" : 108,
+		"learning_10_min_in_a_day" : 95,
+		"learning_30_min_in_a_day" : 66
+	},
+	{
+		"date" : "2020-12-09",
+		"start_learners" : 138,
+		"completed_cnt" : 114,
+		"learning_10_min_in_a_day" : 90,
+		"learning_30_min_in_a_day" : 54
+	},
+	{
+		"date" : "2021-01-06",
+		"start_learners" : 194,
+		"completed_cnt" : 161,
+		"learning_10_min_in_a_day" : 143,
+		"learning_30_min_in_a_day" : 106
+	},
+	{
+		"date" : "2020-10-10",
+		"start_learners" : 180,
+		"completed_cnt" : 129,
+		"learning_10_min_in_a_day" : 119,
+		"learning_30_min_in_a_day" : 101
+	},
+	{
+		"date" : "2020-11-05",
+		"start_learners" : 134,
+		"completed_cnt" : 112,
+		"learning_10_min_in_a_day" : 89,
+		"learning_30_min_in_a_day" : 57
+	},
+	{
+		"date" : "2021-02-02",
+		"start_learners" : 176,
+		"completed_cnt" : 145,
+		"learning_10_min_in_a_day" : 133,
+		"learning_30_min_in_a_day" : 91
+	},
+	{
+		"date" : "2020-09-04",
+		"start_learners" : 3822,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-10-28",
+		"start_learners" : 175,
+		"completed_cnt" : 129,
+		"learning_10_min_in_a_day" : 97,
+		"learning_30_min_in_a_day" : 60
+	},
+	{
+		"date" : "2020-11-28",
+		"start_learners" : 98,
+		"completed_cnt" : 78,
+		"learning_10_min_in_a_day" : 63,
+		"learning_30_min_in_a_day" : 40
+	},
+	{
+		"date" : "2020-11-16",
+		"start_learners" : 135,
+		"completed_cnt" : 115,
+		"learning_10_min_in_a_day" : 94,
+		"learning_30_min_in_a_day" : 54
+	},
+	{
+		"date" : "2020-09-08",
+		"start_learners" : 128,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-09-28",
+		"start_learners" : 288,
+		"completed_cnt" : 145,
+		"learning_10_min_in_a_day" : 115,
+		"learning_30_min_in_a_day" : 83
+	},
+	{
+		"date" : "2020-10-31",
+		"start_learners" : 118,
+		"completed_cnt" : 83,
+		"learning_10_min_in_a_day" : 76,
+		"learning_30_min_in_a_day" : 60
+	},
+	{
+		"date" : "2020-10-19",
+		"start_learners" : 257,
+		"completed_cnt" : 180,
+		"learning_10_min_in_a_day" : 158,
+		"learning_30_min_in_a_day" : 126
+	},
+	{
+		"date" : "2020-09-10",
+		"start_learners" : 103,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-12-15",
+		"start_learners" : 157,
+		"completed_cnt" : 124,
+		"learning_10_min_in_a_day" : 98,
+		"learning_30_min_in_a_day" : 62
+	},
+	{
+		"date" : "2020-09-15",
+		"start_learners" : 112,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	},
+	{
+		"date" : "2020-12-01",
+		"start_learners" : 173,
+		"completed_cnt" : 139,
+		"learning_10_min_in_a_day" : 120,
+		"learning_30_min_in_a_day" : 76
+	},
+	{
+		"date" : "2020-12-12",
+		"start_learners" : 102,
+		"completed_cnt" : 89,
+		"learning_10_min_in_a_day" : 77,
+		"learning_30_min_in_a_day" : 46
+	},
+	{
+		"date" : "2020-09-20",
+		"start_learners" : 80,
+		"completed_cnt" : null,
+		"learning_10_min_in_a_day" : null,
+		"learning_30_min_in_a_day" : null
+	}
+]
