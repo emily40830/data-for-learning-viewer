@@ -73,7 +73,7 @@ const StyledLearningProgressContainer = styled.div`
   margin: 20px 0;
 `;
 
-const Member = ({ member }) => {
+const Member = ({ member, memberId }) => {
   //console.log(member);
   return (
     <Layout title={member.member_id}>
@@ -132,6 +132,7 @@ export const getServerSideProps = async ({ params }) => {
   return {
     props: {
       member,
+      memberId,
     },
   };
 };

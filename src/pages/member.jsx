@@ -14,6 +14,7 @@ const StyledInputContainer = styled.div`
   @media screen and (min-width: 720px) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
     .input {
       flex: 2;
     }

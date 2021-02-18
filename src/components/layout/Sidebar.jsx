@@ -15,8 +15,9 @@ const StyledNav = styled.nav`
   }
 `;
 
-const StyledNavItem = styled.div`
+const StyledNavItem = styled.a`
   margin: 1rem;
+  cursor: pointer;
 `;
 
 const Sidebar = () => {

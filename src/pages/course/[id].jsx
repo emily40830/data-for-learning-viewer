@@ -7,6 +7,8 @@ import ChartCard from '../../components/common/ChartCard';
 import SingleValueCard from '../../components/chart/SingleValueCard';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import contentsInfo from '../../data/content_progress_by_date.json';
+import DropRateViewer from '../../components/course/DropRateViewer';
 
 const StyledContentValueContainer = styled.div`
   display: grid;
@@ -44,7 +46,7 @@ const StyledTimelinesContainer = styled.div`
   }
 `;
 
-const Course = ({ content }) => {
+const Course = ({ content, contentId }) => {
   // single value
   const sumOftotalviewers =
     content &&
@@ -70,7 +72,9 @@ const Course = ({ content }) => {
         <SingleValueCard title="Completeted" value={sumOfFullviewers} />
       </StyledContentValueContainer>
       <StyledChartContainer>
-        <ChartCard title="Drop rate exploration"></ChartCard>
+        <ChartCard title="Drop rate exploration">
+          <DropRateViewer contentId={contentId} />
+        </ChartCard>
         <StyledTimelinesContainer>
           <ChartCard title="Completed by time"></ChartCard>
           <ChartCard title="Interval histogram"></ChartCard>
@@ -83,8 +87,8 @@ const Course = ({ content }) => {
 export default Course;
 
 export const getServerSideProps = async ({ params }) => {
-  const res = await fetch(`${baseURL}content_progress_by_date.json`);
-  const contentsInfo = await res.json();
+  //const res = await fetch(`${baseURL}content_progress_by_date.json`);
+  //const contentsInfo = await res.json();
 
   const content = contentsInfo.filter(
     (contentInfo) => contentInfo.program_content_id === params.id,
@@ -92,6 +96,7 @@ export const getServerSideProps = async ({ params }) => {
   return {
     props: {
       content,
+      contentId: params.id,
     },
   };
 };

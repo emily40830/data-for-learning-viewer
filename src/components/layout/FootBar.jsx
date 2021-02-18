@@ -27,12 +27,13 @@ const StyledNav = styled.nav`
   width: 100%;
 `;
 
-const StyledNavItem = styled.div`
+const StyledNavLink = styled.a`
   flex: 1;
   background-color: var(--background-color-light);
   justify-content: center;
   text-align: center;
   align-items: center;
+  cursor: pointer;
 `;
 
 const FootBar = () => {
@@ -42,13 +43,13 @@ const FootBar = () => {
       <StyledNavContainer>
         <StyledNav>
           <Link href={`/summary`}>
-            <StyledNavItem>summary</StyledNavItem>
+            <StyledNavLink>summary</StyledNavLink>
           </Link>
           <Link href={`/member`}>
-            <StyledNavItem>member</StyledNavItem>
+            <StyledNavLink>member</StyledNavLink>
           </Link>
           <Link href={`/course`}>
-            <StyledNavItem>course</StyledNavItem>
+            <StyledNavLink>course</StyledNavLink>
           </Link>
         </StyledNav>
       </StyledNavContainer>
