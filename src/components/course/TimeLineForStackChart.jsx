@@ -17,6 +17,8 @@ const TimeLineForStackChart = ({ contentId, chartHeight }) => {
       },
     })
       .then((res) => {
+        console.log('content_progress api', res);
+        'content_progress api', res.json;
         return res.json();
       })
       .then((data) => {
