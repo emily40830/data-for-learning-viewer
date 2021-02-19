@@ -33,6 +33,7 @@ const DropRateViewer = ({ contentId }) => {
     setLoading(true);
     fetch(`/api/drop_rank`)
       .then((res) => {
+        console.log('/api/drop_rank', res);
         return res.json();
       })
       .then((data) => {

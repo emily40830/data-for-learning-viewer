@@ -1,8 +1,8 @@
 import contentMaxRank from '../../../data/content_max_rank.json';
 
 export default async (req, res) => {
-  //console.log(id);
+  //console.log(contentMaxRank);
 
-  return res.json([...contentMaxRank]);
+  res.status(200).json(contentMaxRank);
   //fs.readline
 };
