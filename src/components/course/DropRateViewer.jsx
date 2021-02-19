@@ -31,9 +31,14 @@ const DropRateViewer = ({ contentId }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`/api/drop_rank`)
+    fetch(`/api/drop_rank`, {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
       .then((res) => {
-        console.log('/api/drop_rank', res);
+        //console.log('/api/drop_rank', res);
         return res.json();
       })
       .then((data) => {

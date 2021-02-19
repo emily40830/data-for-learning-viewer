@@ -99,7 +99,7 @@ export default Course;
 export const getServerSideProps = async ({ params }) => {
   //const res = await fetch(`${baseURL}content_progress_by_date.json`);
   //const contentsInfo = await res.json();
-
+  console.log('course/:id server side props');
   const content = contentsInfo.filter(
     (contentInfo) => contentInfo.program_content_id === params.id,
   );
