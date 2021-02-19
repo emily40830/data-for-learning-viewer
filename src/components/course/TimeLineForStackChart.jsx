@@ -10,7 +10,7 @@ const TimeLineForStackChart = ({ contentId, chartHeight }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('/api/content_progress', {
+    fetch('/content_progress_by_date.json', {
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
