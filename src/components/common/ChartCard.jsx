@@ -6,6 +6,7 @@ const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+  margin-bottom: 2rem;
 
   border-radius: 5px;
   background: #ffffff;
@@ -30,9 +31,9 @@ const StyledContainer = styled.div`
 
 const StyledCardTitle = styled.div``;
 
-const ChartCard = ({ title, children }) => {
+const ChartCard = ({ title, children, className }) => {
   return (
-    <StyledContainer>
+    <StyledContainer className={className}>
       {/* <rect className="card__border"></rect> */}
       <div className="card__inner">
         <div className="card__title">{title}</div>

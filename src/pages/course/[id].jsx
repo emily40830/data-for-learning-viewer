@@ -9,6 +9,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import contentsInfo from '../../data/content_progress_by_date.json';
 import DropRateViewer from '../../components/course/DropRateViewer';
+import TimeLineForStackChart from '../../components/course/TimeLineForStackChart';
+import IntervalHistogramChart from '../../components/course/IntervalHistogramChart';
 
 const StyledContentValueContainer = styled.div`
   display: grid;
@@ -20,29 +22,33 @@ const StyledContentValueContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    margin-bottom: 0;
+    margin-bottom: 1em;
   }
 `;
 
 const StyledChartContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  display: flex;
+  flex-direction: row;
   margin: 20px 0;
   @media screen and (max-width: 720px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-bottom: 0;
+    flex-direction: column;
   }
 `;
 
 const StyledTimelinesContainer = styled.div`
+  flex: 1;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   @media screen and (max-width: 720px) {
     margin-left: 0px;
+  }
+`;
+
+const StyledChartCard = styled(ChartCard)`
+  flex: 1;
+  @media screen and (max-width: 720px) {
+    margin-bottom: 2rem;
   }
 `;
 
@@ -72,12 +78,16 @@ const Course = ({ content, contentId }) => {
         <SingleValueCard title="Completeted" value={sumOfFullviewers} />
       </StyledContentValueContainer>
       <StyledChartContainer>
-        <ChartCard title="Drop rate exploration">
+        <StyledChartCard title="Drop rate exploration" style={{ flex: 1 }}>
           <DropRateViewer contentId={contentId} />
-        </ChartCard>
+        </StyledChartCard>
         <StyledTimelinesContainer>
-          <ChartCard title="Completed by time"></ChartCard>
-          <ChartCard title="Interval histogram"></ChartCard>
+          <StyledChartCard title="Completed by time">
+            <TimeLineForStackChart contentId={contentId} chartHeight="200" />
+          </StyledChartCard>
+          <ChartCard title="Interval histogram">
+            <IntervalHistogramChart contentId={contentId} />
+          </ChartCard>
         </StyledTimelinesContainer>
       </StyledChartContainer>
     </Layout>

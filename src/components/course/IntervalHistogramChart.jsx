@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IntervalHistogramChart = () => {
+const IntervalHistogramChart = ({ contentId }) => {
   return <div></div>;
 };
 

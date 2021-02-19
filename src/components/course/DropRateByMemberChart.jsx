@@ -27,14 +27,14 @@ const DropRateByMemberChart = ({ viewedByMembers, chartHeight }) => {
 
   useEffect(() => {
     const canvas = select(svgRef.current);
-    console.log(chartHeight);
-    console.log(viewedByMembers);
+    //console.log(chartHeight);
+    //console.log(viewedByMembers);
     if (viewedByMembers && chartHeight) {
       const { width, height } =
         dimensions || wrapperRef.current.getBoundingClientRect();
 
-      console.log('height', height);
-      console.log('width', width);
+      //console.log('height', height);
+      //console.log('width', width);
       // Add X axis
       const xScale = scaleLinear()
         .domain([
