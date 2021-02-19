@@ -17,12 +17,10 @@ const TimeLineForStackChart = ({ contentId, chartHeight }) => {
       },
     })
       .then((res) => {
-        console.log('content_progress api', res);
-        'content_progress api', res.json;
         return res.json();
       })
       .then((data) => {
-        //console.log('data', data);
+        console.log('data', data);
         const courseBytime = data.filter(
           (eachData) => eachData.program_content_id === contentId,
         );
