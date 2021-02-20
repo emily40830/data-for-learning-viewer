@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TimelineStackChart from '../chart/TimelineStackChart';
 import styled from 'styled-components';
 import { defaultColors } from '../../util';
+import Legend from '../common/Legend';
 
 const StyledLegendContainer = styled.div`
   display: flex;
@@ -48,7 +49,12 @@ const ActiveUserChart = ({ height }) => {
   return (
     <div style={{ height: `${height}px` }}>
       <TimelineStackChart data={data} keys={keys} colors={colors} height="85" />
-      <StyledLegendContainer></StyledLegendContainer>
+      {console.log(keys)}
+      <StyledLegendContainer>
+        <Legend title="test" color="blue" />
+        <Legend title="test" color="blue" />
+        <Legend title="test" color="blue" />
+      </StyledLegendContainer>
     </div>
   );
 };

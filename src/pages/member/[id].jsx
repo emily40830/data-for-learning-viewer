@@ -6,6 +6,7 @@ import { formatUserName } from '../../util';
 import ChartCard from '../../components/common/ChartCard';
 import SingleValueCard from '../../components/chart/SingleValueCard';
 import membersInfo from '../../../public/user_list.json';
+// import ProgressHeatmap from '../../components/member/ProgressHeatmap';
 
 const Container = styled.div`
   display: grid;
@@ -113,7 +114,9 @@ const Member = ({ member }) => {
             />
           </StyledMemberContainer>
           <StyledLearningProgressContainer>
-            <ChartCard title="Learning Progress"></ChartCard>
+            <ChartCard title="Learning Progress">
+              {/* <ProgressHeatmap memberId={member.member_id} /> */}
+            </ChartCard>
           </StyledLearningProgressContainer>
         </RightContent>
       </Container>
