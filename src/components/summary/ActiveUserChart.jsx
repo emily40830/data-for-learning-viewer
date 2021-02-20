@@ -15,6 +15,7 @@ const StyledLegendContainer = styled.div`
 const ActiveUserChart = ({ height }) => {
   const [data, setData] = useState([]);
   const [keys, setKeys] = useState([]);
+  const [allKeys, setAllKeys] = useState([]);
   const [colors, setColors] = useState();
 
   useEffect(() => {
@@ -34,13 +35,14 @@ const ActiveUserChart = ({ height }) => {
         setData([...data]);
         const newKeys = Object.keys(data[0]).slice(1);
         setKeys([...newKeys]);
-
+        setAllKeys([...newKeys]);
         const newColors = newKeys.reduce(
           (acc, curr, currIndex) => (
             (acc[curr] = defaultColors[currIndex]), acc
           ),
           {},
         );
+        console.log(newColors);
         setColors({ ...newColors });
       })
       .catch((err) => console.error(err));
@@ -51,9 +53,30 @@ const ActiveUserChart = ({ height }) => {
       <TimelineStackChart data={data} keys={keys} colors={colors} height="85" />
       {console.log(keys)}
       <StyledLegendContainer>
-        <Legend title="test" color="blue" />
-        <Legend title="test" color="blue" />
-        <Legend title="test" color="blue" />
+        {allKeys.map((legendKey) => {
+          return (
+            <Legend
+              key={legendKey}
+              color={colors ? colors[legendKey] : '#fff'}
+              title={legendKey}
+              isSelect={keys.includes(legendKey)}
+              onSelect={(props) => {
+                const { isSelect, target } = props;
+                console.log('isSelect', isSelect);
+                console.log('target', target);
+                if (isSelect) {
+                  setKeys(Array.from(new Set([...keys, target])));
+                } else {
+                  const FilteredKeys = keys.filter((eachKey) => {
+                    return eachKey !== target;
+                  });
+                  console.log(FilteredKeys);
+                  setKeys(FilteredKeys);
+                }
+              }}
+            />
+          );
+        })}
       </StyledLegendContainer>
     </div>
   );

@@ -1,11 +1,18 @@
 import React, { useRef, useEffect } from 'react';
 import { select } from 'd3';
 import useResizeObserver from '../../hooks/useResizeObserver';
+import styled from 'styled-components';
 
-const Legend = ({ title, color }) => {
+const unClickColor = 'lightgrey';
+
+const StyledButton = styled.button`
+  background-color: white;
+  border: 0px;
+`;
+
+const Legend = ({ title, color, isSelect, onSelect }) => {
   const wrapperRef = useRef();
   const svgRef = useRef();
-
   const dimensions = useResizeObserver(wrapperRef);
 
   useEffect(() => {
@@ -13,34 +20,40 @@ const Legend = ({ title, color }) => {
     if ((title, color)) {
       const { width, height } =
         dimensions || wrapperRef.current.getBoundingClientRect();
-
+      console.log(width, height);
       const legendArea = canvas.append('g').attr('class', 'legend');
       legendArea
         .append('circle')
-        .attr('cx', 30)
-        .attr('cy', 30)
+        .attr('cx', 15)
+        .attr('cy', 15)
         .attr('r', 6)
-        .style('fill', color);
+        .style('fill', isSelect ? color : unClickColor);
 
       legendArea
         .append('text')
-        .attr('x', 30 + 20)
-        .attr('y', 30)
+        .attr('x', 15 + 20)
+        .attr('y', 15)
         .text(title)
         .attr('alignment-baseline', 'middle')
-        .attr('fill', 'var(--label-font-color)')
+        .attr('fill', isSelect ? 'var(--label-font-color)' : unClickColor)
         .style('font-size', 'var(--label-font-family)');
     }
 
     return () => {
       canvas.select('g').remove();
     };
-  }, [title, color, dimensions]);
+  }, [title, color, dimensions, isSelect]);
 
   return (
-    <div ref={wrapperRef}>
-      <svg ref={svgRef}></svg>
-    </div>
+    <StyledButton
+      onClick={() => {
+        onSelect && onSelect({ isSelect: !isSelect, target: title });
+      }}
+    >
+      <div style={{ height: '30px' }} ref={wrapperRef}>
+        <svg height="30px" ref={svgRef}></svg>
+      </div>
+    </StyledButton>
   );
 };
 
