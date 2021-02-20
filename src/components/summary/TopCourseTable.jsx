@@ -5,8 +5,10 @@ import TableHeading from '../table/TableHeading';
 import TableRow from '../table/TableRow';
 import TableRowCell from '../table/TableRowCell';
 import HeadingItem from '../table/HeadingItem';
+import LoadingTable from '../common/LoadingTable';
 
 const TopCourseTable = () => {
+  const [isLoading, setLoading] = useState(false);
   const [courses, setCourses] = useState([]);
   const StyledTableContainer = styled.div`
     height: 100%;
@@ -14,6 +16,7 @@ const TopCourseTable = () => {
   `;
 
   useEffect(() => {
+    setLoading(true);
     fetch('/top_course.json', {
       headers: {
         'Content-Type': 'application/json',
@@ -31,9 +34,11 @@ const TopCourseTable = () => {
           };
         });
         setCourses([...newCourse]);
+        setLoading(false);
       })
       .catch((err) => {
         console.error(err);
+        setLoading(false);
       });
   }, []);
 
@@ -44,22 +49,21 @@ const TopCourseTable = () => {
         <HeadingItem>Publish Date</HeadingItem>
         <HeadingItem>Viewed Count</HeadingItem>
       </TableHeading>
-      {courses.map((course) => {
-        return (
-          <TableRow key={course.program_content_id}>
-            <TableRowCell>{course.program_content_id}</TableRowCell>
-            <TableRowCell>{course.published_at}</TableRowCell>
-            <TableRowCell>{course.viewed_cnt}</TableRowCell>
-          </TableRow>
-        );
-      })}
+      {isLoading ? (
+        <LoadingTable />
+      ) : (
+        courses.map((course) => {
+          return (
+            <TableRow key={course.program_content_id}>
+              <TableRowCell>{course.program_content_id}</TableRowCell>
+              <TableRowCell>{course.published_at}</TableRowCell>
+              <TableRowCell>{course.viewed_cnt}</TableRowCell>
+            </TableRow>
+          );
+        })
+      )}
     </StyledTableContainer>
   );
 };
 
 export default TopCourseTable;
-
-const StyledHeading = styled.div`
-  display: flex;
-  padding: 20px;
-`;

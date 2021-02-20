@@ -8,6 +8,7 @@ import HeadingButton from '../components/table/HeadingButton';
 import TableRow from '../components/table/TableRow';
 import TableRowCell from '../components/table/TableRowCell';
 import { formatUserName } from '../util';
+import LoadingTable from '../components/common/LoadingTable';
 
 const StyledInputContainer = styled.div`
   margin-bottom: 40px;
@@ -30,9 +31,11 @@ const StyledCount = styled.div`
 `;
 
 const member = () => {
+  const [isLoading, setLoading] = useState(false);
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
+    setLoading(true);
     fetch('/user_list.json', {
       headers: {
         'Content-Type': 'application/json',
@@ -44,12 +47,16 @@ const member = () => {
       })
       .then((data) => {
         setMembers([...data]);
+        setLoading(false);
         // const newUser = data.map((d) => {
         //   return { ...d, member_id: formatUserName(d.member_id) };
         // });
         // setMembers([...newUser]);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+      });
   }, []);
   //const [keyword,]
   return (
@@ -86,28 +93,32 @@ const member = () => {
           </HeadingButton>
         </TableHeading>
         <div style={{ height: '600px', overflowY: 'scroll' }}>
-          {members.map((member) => {
-            return (
-              <div key={`memberRow-${member.member_id}`}>
-                <Link href={`/member/${member.member_id}`}>
-                  <a>
-                    <TableRow>
-                      <TableRowCell align="left">
-                        {formatUserName(member.member_id)}
-                      </TableRowCell>
-                      <TableRowCell notShowInMobile={true}>
-                        {member.created_at}
-                      </TableRowCell>
-                      <TableRowCell notShowInMobile={true}>
-                        {member.last_login_at}
-                      </TableRowCell>
-                      <TableRowCell>{member.completed_rate} %</TableRowCell>
-                    </TableRow>
-                  </a>
-                </Link>
-              </div>
-            );
-          })}
+          {isLoading ? (
+            <LoadingTable />
+          ) : (
+            members.map((member) => {
+              return (
+                <div key={`memberRow-${member.member_id}`}>
+                  <Link href={`/member/${member.member_id}`}>
+                    <a>
+                      <TableRow>
+                        <TableRowCell align="left">
+                          {formatUserName(member.member_id)}
+                        </TableRowCell>
+                        <TableRowCell notShowInMobile={true}>
+                          {member.created_at}
+                        </TableRowCell>
+                        <TableRowCell notShowInMobile={true}>
+                          {member.last_login_at}
+                        </TableRowCell>
+                        <TableRowCell>{member.completed_rate} %</TableRowCell>
+                      </TableRow>
+                    </a>
+                  </Link>
+                </div>
+              );
+            })
+          )}
         </div>
       </div>
     </Layout>

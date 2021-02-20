@@ -24,7 +24,7 @@ const StyledSummaryContainer = styled.div`
 
 const StyledTimelineContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
   margin-bottom: 0;
   margin: 20px 0;
@@ -32,7 +32,7 @@ const StyledTimelineContainer = styled.div`
 
 const StyledTopCourseAndMember = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin: 20px 0;
   @media screen and (max-width: 720px) {

@@ -63,15 +63,15 @@ const ActiveUserChart = ({ height }) => {
               isSelect={keys.includes(legendKey)}
               onSelect={(props) => {
                 const { isSelect, target } = props;
-                console.log('isSelect', isSelect);
-                console.log('target', target);
+                //console.log('isSelect', isSelect);
+                //console.log('target', target);
                 if (isSelect) {
                   setKeys(Array.from(new Set([...keys, target])));
                 } else {
                   const FilteredKeys = keys.filter((eachKey) => {
                     return eachKey !== target;
                   });
-                  console.log(FilteredKeys);
+                  //console.log(FilteredKeys);
                   setKeys(FilteredKeys);
                 }
               }}

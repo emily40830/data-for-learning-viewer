@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
   border: none;
   background-color: transparent;
-  outline: none;
+
   cursor: pointer;
 
   flex: 4;
@@ -23,12 +23,19 @@ const StyledButton = styled.button`
   }
 `;
 
-const HeadingButton = ({ children, justify, align, notShowInMobile }) => {
+const HeadingButton = ({
+  children,
+  justify,
+  align,
+  notShowInMobile,
+  onSort,
+}) => {
   return (
     <StyledButton
       justify={justify}
       align={align}
       notShowInMobile={notShowInMobile}
+      onClick={onSort && onSort()}
     >
       {children}
     </StyledButton>

@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import styled from 'styled-components';
 import Layout from '../components/layout/Layout';
 import SearchInput from '../components/common/SearchInput';
+
+import LoadingTable from '../components/common/LoadingTable';
+import CourseTable from '../components/course/CourseTable';
 import TableHeading from '../components/table/TableHeading';
 import HeadingButton from '../components/table/HeadingButton';
-import TableRow from '../components/table/TableRow';
-import TableRowCell from '../components/table/TableRowCell';
-import { formatCourseName } from '../util';
 
 const StyledInputContainer = styled.div`
   margin-bottom: 40px;
@@ -29,9 +28,20 @@ const StyledCount = styled.div`
 `;
 
 const course = () => {
+  const [isLoading, setLoading] = useState(false);
   const [videos, setVideos] = useState([]);
+  const [direction, setDirection] = useState(null);
+  const [sortBy, setSortBy] = useState(null);
+  const [orderedContents, setOrderedContents] = useState([]);
+  const [keyword, setKeyword] = useState('');
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    setKeyword(e.target.value.toLowerCase());
+  };
 
   useEffect(() => {
+    setLoading(true);
     fetch('/video_list.json', {
       headers: {
         'Content-Type': 'application/json',
@@ -43,70 +53,58 @@ const course = () => {
       })
       .then((data) => {
         setVideos([...data]);
+        //setOrderedContents([...data]);
+        setLoading(false);
         // const newUser = data.map((d) => {
         //   return { ...d, member_id: formatUserName(d.member_id) };
         // });
         // setMembers([...newUser]);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+      });
   }, []);
-  //const [keyword,]
+
+  useEffect(() => {
+    const filteredContents = videos.filter((content) =>
+      content.program_content_id.toLowerCase().includes(keyword),
+    );
+    setVideos(filteredContents);
+  }, [keyword]);
+
   return (
     <Layout title="contents">
       <div>Contents</div>
       <StyledInputContainer>
         <StyledCount>Found {videos.length} contents</StyledCount>
         <div className="input">
-          <SearchInput placeholder="Filter by name" onChange={() => {}} />
+          <SearchInput placeholder="Filter by name" onChange={handleChange} />
         </div>
       </StyledInputContainer>
-      <div>
-        <TableHeading>
-          <HeadingButton
-            align="left"
-            justify="flex-start"
-            // onClick={() => setValueAndDirection('name')}
-          >
-            <div>ContentId</div>
-            {/* {value === 'name' && <SortArrow direction={direction} />} */}
-          </HeadingButton>
-          <HeadingButton
-            notShowInMobile={true}
-            // onClick={() => setValueAndDirection('population')}
-          >
-            <div>Publish time</div>
-            {/* {value === 'population' && <SortArrow direction={direction} />} */}
-          </HeadingButton>
-          <HeadingButton>
-            <div>Numbers of viewed</div>
-          </HeadingButton>
-          <HeadingButton>
-            <div>drop rate</div>
-          </HeadingButton>
-        </TableHeading>
-        <div style={{ height: '600px', overflowY: 'scroll' }}>
-          {videos.map((video) => {
-            return (
-              <div key={`${video.program_content_id}`}>
-                <Link href={`/course/${video.program_content_id}`}>
-                  <a>
-                    <TableRow>
-                      <TableRowCell align="left">
-                        {formatCourseName(video.program_content_id)}
-                      </TableRowCell>
-                      <TableRowCell notShowInMobile={true}>
-                        {video.published_at}
-                      </TableRowCell>
-                      <TableRowCell>{video.viewed_cnt}</TableRowCell>
-                      <TableRowCell>{video.drop_rate} %</TableRowCell>
-                    </TableRow>
-                  </a>
-                </Link>
-              </div>
-            );
-          })}
+      {isLoading ? (
+        <div>
+          <TableHeading>
+            <HeadingButton align="left" justify="flex-start">
+              <div>ContentId</div>
+            </HeadingButton>
+            <HeadingButton>
+              <div>Publish time</div>
+            </HeadingButton>
+            <HeadingButton>
+              <div>Numbers of viewed</div>
+            </HeadingButton>
+            <HeadingButton>
+              <div>drop rate</div>
+            </HeadingButton>
+          </TableHeading>
+          <div style={{ height: '600px', overflowY: 'scroll' }}>
+            <LoadingTable />
+          </div>
         </div>
-      </div>
+      ) : (
+        <CourseTable contents={videos} />
+      )}
     </Layout>
   );
 };

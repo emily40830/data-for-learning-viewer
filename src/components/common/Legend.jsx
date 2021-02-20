@@ -6,8 +6,16 @@ import styled from 'styled-components';
 const unClickColor = 'lightgrey';
 
 const StyledButton = styled.button`
-  background-color: white;
-  border: 0px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+`;
+
+const StyledSvg = styled.svg`
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
 `;
 
 const Legend = ({ title, color, isSelect, onSelect }) => {
@@ -51,7 +59,7 @@ const Legend = ({ title, color, isSelect, onSelect }) => {
       }}
     >
       <div style={{ height: '30px' }} ref={wrapperRef}>
-        <svg height="30px" width="auto" ref={svgRef}></svg>
+        <StyledSvg ref={svgRef}></StyledSvg>
       </div>
     </StyledButton>
   );
