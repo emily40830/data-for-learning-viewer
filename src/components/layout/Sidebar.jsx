@@ -27,7 +27,7 @@ const StyledNavItem = styled.div`
   display: flex;
 
   align-items: center;
-  padding: 0 7px;
+  padding: 0 13px;
   border-bottom: 1px solid var(--background-color-light);
   margin: ;
 `;
