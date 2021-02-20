@@ -30,9 +30,7 @@ const StyledCount = styled.div`
 const course = () => {
   const [isLoading, setLoading] = useState(false);
   const [videos, setVideos] = useState([]);
-  const [direction, setDirection] = useState(null);
-  const [sortBy, setSortBy] = useState(null);
-  const [orderedContents, setOrderedContents] = useState([]);
+  const [filteredContents, setFilteredContents] = useState([]);
   const [keyword, setKeyword] = useState('');
 
   const handleChange = (e) => {
@@ -53,7 +51,7 @@ const course = () => {
       })
       .then((data) => {
         setVideos([...data]);
-        //setOrderedContents([...data]);
+        setFilteredContents([...data]);
         setLoading(false);
         // const newUser = data.map((d) => {
         //   return { ...d, member_id: formatUserName(d.member_id) };
@@ -67,17 +65,21 @@ const course = () => {
   }, []);
 
   useEffect(() => {
-    const filteredContents = videos.filter((content) =>
-      content.program_content_id.toLowerCase().includes(keyword),
-    );
-    setVideos(filteredContents);
+    if (keyword === '') {
+      setFilteredContents(videos);
+    } else {
+      const filteredContents = videos.filter((content) =>
+        content.program_content_id.toLowerCase().includes(keyword),
+      );
+      setFilteredContents(filteredContents);
+    }
   }, [keyword]);
 
   return (
     <Layout title="contents">
       <div>Contents</div>
       <StyledInputContainer>
-        <StyledCount>Found {videos.length} contents</StyledCount>
+        <StyledCount>Found {filteredContents.length} contents</StyledCount>
         <div className="input">
           <SearchInput placeholder="Filter by name" onChange={handleChange} />
         </div>
@@ -103,7 +105,7 @@ const course = () => {
           </div>
         </div>
       ) : (
-        <CourseTable contents={videos} />
+        <CourseTable contents={filteredContents} />
       )}
     </Layout>
   );
