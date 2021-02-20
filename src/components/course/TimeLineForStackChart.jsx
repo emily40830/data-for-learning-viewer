@@ -20,7 +20,7 @@ const TimeLineForStackChart = ({ contentId, chartHeight }) => {
         return res.json();
       })
       .then((data) => {
-        console.log('data', data);
+        //console.log('data', data);
         const courseBytime = data.filter(
           (eachData) => eachData.program_content_id === contentId,
         );
@@ -31,7 +31,7 @@ const TimeLineForStackChart = ({ contentId, chartHeight }) => {
           completed_half_cnt: defaultColors[2],
           viewed_cnt: defaultColors[0],
         });
-        setLoading(true);
+        setLoading(false);
       })
       .catch((err) => {
         setLoading(false);
@@ -41,13 +41,17 @@ const TimeLineForStackChart = ({ contentId, chartHeight }) => {
 
   return (
     <div style={{ height: `${Number(chartHeight) + 70}px` }}>
-      <StackAreaTimeLineChart
-        stackKeys={keys}
-        stackColors={colors}
-        data={contentViewedBytime}
-        chartHeight={Number(chartHeight) + 70}
-        sortBy="viewed_date"
-      />
+      {isLoading ? (
+        'loading'
+      ) : (
+        <StackAreaTimeLineChart
+          stackKeys={keys}
+          stackColors={colors}
+          data={contentViewedBytime}
+          chartHeight={Number(chartHeight) + 70}
+          sortBy="viewed_date"
+        />
+      )}
     </div>
   );
 };

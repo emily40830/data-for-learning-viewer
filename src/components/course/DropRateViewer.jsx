@@ -10,7 +10,7 @@ import DropRateByMemberChart from './DropRateByMemberChart';
 
 const StyledValueHistContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 10px;
   margin: 20px 0;
 `;
@@ -77,13 +77,17 @@ const DropRateViewer = ({ contentId }) => {
             ),
           };
         });
+
         setDropRateList(contentsDropRate);
         // current drop rate
         const targetContent = contentsDropRate.filter(
           (content) => content.program_content_id === contentId,
         );
-        if (targetContent.length > 1) {
+        //console.log('current', targetContent);
+        //console.log()
+        if (targetContent.length > 0) {
           const currDropRate = targetContent[0].drop_rate;
+          //console.log(currDropRate);
           setDropRate(currDropRate);
         }
 
@@ -116,17 +120,30 @@ const DropRateViewer = ({ contentId }) => {
   return (
     <>
       <StyledValueHistContainer>
-        <DropRateValueCard dropRate={dropRate} />
-        <DropRateHistogram
-          currentUserDropRate={dropRate}
-          dropRateList={dropRateList}
-        />
+        {isLoading ? (
+          'loading'
+        ) : (
+          <DropRateValueCard dropRate={dropRate} chartHeight={180} />
+        )}
+        {isLoading ? (
+          'loading'
+        ) : (
+          <DropRateHistogram
+            currentUserDropRate={dropRate}
+            dropRateList={dropRateList}
+            chartHeight={180}
+          />
+        )}
       </StyledValueHistContainer>
       <StyledChartContainer>
-        <DropRateByMemberChart
-          viewedByMembers={viewingRankByMembers}
-          chartHeight={chartHeight}
-        />
+        {isLoading ? (
+          'loading'
+        ) : (
+          <DropRateByMemberChart
+            viewedByMembers={viewingRankByMembers}
+            chartHeight={chartHeight}
+          />
+        )}
       </StyledChartContainer>
     </>
   );

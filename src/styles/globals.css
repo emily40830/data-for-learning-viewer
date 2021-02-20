@@ -8,13 +8,14 @@
   --primary-color: #21b6b7;
   --secondary-color: #8ce7e8;
 
+  --chart-grid-color: #ebe8e8;
   --background-color: #f9f9f9;
   --background-color-dark: #eef3f6;
   --background-color-light: #ffffff;
   --sidebar-background-color: #cce1e0;
 
   --font-family: 'Poppins', sans-serif;
-  --label-font-family: 'monospace';
+  --label-font-family: sans-serif;
   --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 }
 

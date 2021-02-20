@@ -1,3 +1,5 @@
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
 import contentProgressByDate from '../../data/content_progress_by_date.json';
 
 export default async (req, res) => {
