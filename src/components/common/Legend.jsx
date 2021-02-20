@@ -36,7 +36,7 @@ const Legend = ({ title, color, isSelect, onSelect }) => {
         .text(title)
         .attr('alignment-baseline', 'middle')
         .attr('fill', isSelect ? 'var(--label-font-color)' : unClickColor)
-        .style('font-size', 'var(--label-font-family)');
+        .style('font-size', '10');
     }
 
     return () => {
@@ -51,7 +51,7 @@ const Legend = ({ title, color, isSelect, onSelect }) => {
       }}
     >
       <div style={{ height: '30px' }} ref={wrapperRef}>
-        <svg height="30px" ref={svgRef}></svg>
+        <svg height="30px" width="auto" ref={svgRef}></svg>
       </div>
     </StyledButton>
   );

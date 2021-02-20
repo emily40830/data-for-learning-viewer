@@ -3,16 +3,14 @@ import styled from 'styled-components';
 import { formatUserName } from '../../util';
 import TableRow from '../table/TableRow';
 import TableRowCell from '../table/TableRowCell';
-
-const StyledHeading = styled.div`
-  display: flex;
-  padding: 20px;
-`;
+import HeadingItem from '../table/HeadingItem';
+import TableHeading from '../table/TableHeading';
 
 const TopUserTable = () => {
   const [users, setUsers] = useState([]);
   const StyledTableContainer = styled.div`
     height: 100%;
+    padding: 0 20px;
   `;
 
   useEffect(() => {
@@ -38,6 +36,11 @@ const TopUserTable = () => {
 
   return (
     <StyledTableContainer>
+      <TableHeading>
+        <HeadingItem>User Id</HeadingItem>
+        <HeadingItem>Last viewed Date</HeadingItem>
+        <HeadingItem>Viewing hour(hr)</HeadingItem>
+      </TableHeading>
       {users.map((user) => {
         return (
           <TableRow key={user.member_id}>

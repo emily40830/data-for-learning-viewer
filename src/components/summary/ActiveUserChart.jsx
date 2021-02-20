@@ -5,6 +5,7 @@ import { defaultColors } from '../../util';
 import Legend from '../common/Legend';
 
 const StyledLegendContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;

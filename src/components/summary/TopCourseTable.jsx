@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { formatCourseName } from '../../util';
+import TableHeading from '../table/TableHeading';
 import TableRow from '../table/TableRow';
 import TableRowCell from '../table/TableRowCell';
+import HeadingItem from '../table/HeadingItem';
 
 const TopCourseTable = () => {
   const [courses, setCourses] = useState([]);
   const StyledTableContainer = styled.div`
     height: 100%;
+    padding: 0 20px;
   `;
 
   useEffect(() => {
@@ -36,6 +39,11 @@ const TopCourseTable = () => {
 
   return (
     <StyledTableContainer>
+      <TableHeading>
+        <HeadingItem>Course Id</HeadingItem>
+        <HeadingItem>Publish Date</HeadingItem>
+        <HeadingItem>Viewed Count</HeadingItem>
+      </TableHeading>
       {courses.map((course) => {
         return (
           <TableRow key={course.program_content_id}>
