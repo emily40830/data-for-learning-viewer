@@ -12,6 +12,7 @@ const LogoArea = styled.div`
   diaplay: flex;
   align-items: center;
   padding-top: 20px;
+  padding-left: 10px;
 `;
 
 const StyledNav = styled.nav`
