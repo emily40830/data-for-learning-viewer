@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { defaultColors } from '../../util';
+import { Skeleton } from '@material-ui/lab';
 import StackAreaTimeLineChart from '../chart/StackAreaTimeLineChart';
 
 const TimeLineForStackChart = ({ contentId, chartHeight }) => {
@@ -42,7 +43,9 @@ const TimeLineForStackChart = ({ contentId, chartHeight }) => {
   return (
     <div style={{ height: `${Number(chartHeight) + 70}px` }}>
       {isLoading ? (
-        'loading'
+        <div style={{ padding: '20px' }}>
+          <Skeleton animation="wave" />
+        </div>
       ) : (
         <StackAreaTimeLineChart
           stackKeys={keys}

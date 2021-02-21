@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
   border: none;
   background-color: transparent;
-
+  outline: none;
   cursor: pointer;
 
   flex: 4;

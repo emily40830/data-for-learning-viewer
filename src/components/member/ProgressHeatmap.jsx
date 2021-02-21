@@ -1,10 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import Typography from '@material-ui/core/Typography';
 // import CalendarHeatmap from 'reactjs-calendar-heatmap';
-import HeatMapDate from 'react-d3-heatmap';
+//import HeatMapDate from 'react-d3-heatmap';
 import { getColorsMapping } from '../../util';
+import { Skeleton } from '@material-ui/lab';
 
 const ProgressHeatmap = ({ memberId }) => {
   const [isLoading, setIsLoading] = useState(false);
+  const [progresses, setProgresses] = useState([]);
   const [progress, setProgress] = useState([]);
   const [minDate, setMinDate] = useState(null);
   const [maxDate, setMaxDate] = useState(null);
@@ -25,6 +35,10 @@ const ProgressHeatmap = ({ memberId }) => {
         const newData = data.filter(
           (eachData) => eachData.member_id === memberId,
         );
+
+        setProgresses(newData);
+
+        console.log(newData);
         const userProgress = newData.map((eachData) => {
           return {
             date: new Date(eachData.date),
@@ -57,19 +71,80 @@ const ProgressHeatmap = ({ memberId }) => {
       });
   }, [memberId]);
 
+  // return (
+  //   <div>
+  //     {isLoading ? (
+  //       'loading'
+  //     ) : (
+  //       <DateHeatMap
+  //         data={progress}
+  //         minDate={minDate}
+  //         maxDate={maxDate}
+  //         colors={colors}
+  //       />
+  //     )}
+  //   </div>
+  // );
   return (
-    <div>
+    <React.Fragment>
       {isLoading ? (
-        'loading'
+        <div style={{ padding: '20px' }}>
+          <Skeleton animation="wave" variant="rect" height={50} />
+          <br />
+          <Skeleton animation="wave" variant="rect" height={50} />
+          <br />
+          <Skeleton animation="wave" variant="rect" height={50} />
+          <br />
+          <Skeleton animation="wave" variant="rect" height={50} />
+        </div>
       ) : (
-        <DateHeatMap
-          data={progress}
-          minDate={minDate}
-          maxDate={maxDate}
-          colors={colors}
-        />
+        <Timeline align="left">
+          {progresses.map((each, index) => {
+            // console.log(
+            //   each.completed_rate,
+            //   getColorsMapping(each.completed_rate),
+            // );
+            // if (index % 2 === 0) {
+            return (
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography color="textSecondary">{each.date}</Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot color="inherit" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Typography>contents read : {each.content_cnt}</Typography>
+                  <Typography>
+                    completed_rate: {each.completed_rate} %
+                  </Typography>
+                </TimelineContent>
+              </TimelineItem>
+            );
+            // } else {
+            //   return (
+            //     <TimelineItem>
+            //       <TimelineOppositeContent>
+            //         <Typography color="textSecondary">{each.date}</Typography>
+            //       </TimelineOppositeContent>
+            //       <TimelineSeparator>
+            //         <TimelineDot color="inherit" />
+            //         <TimelineConnector />
+            //       </TimelineSeparator>
+            //       <TimelineContent>
+            //         <Typography>contents read : {each.content_cnt}</Typography>
+            //         <Typography>
+            //           completed_rate: {each.completed_rate} %
+            //         </Typography>
+            //       </TimelineContent>
+            //     </TimelineItem>
+            //   );
+            // }
+          })}
+        </Timeline>
       )}
-    </div>
+    </React.Fragment>
   );
 };
 

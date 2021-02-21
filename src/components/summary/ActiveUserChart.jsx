@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Skeleton } from '@material-ui/lab';
 import TimelineStackChart from '../chart/TimelineStackChart';
 import styled from 'styled-components';
 import { defaultColors } from '../../util';
@@ -14,12 +15,14 @@ const StyledLegendContainer = styled.div`
 //const defaultColors = ['#F1BFBD', '#EBD9B9', '#BACBA9', '#7184A6', '#C8C1DB'];
 
 const ActiveUserChart = ({ height }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState([]);
   const [keys, setKeys] = useState([]);
   const [allKeys, setAllKeys] = useState([]);
   const [colors, setColors] = useState();
 
   useEffect(() => {
+    setIsLoading(true);
     //console.log('in active user effect');
     fetch('/summary_timeline.json', {
       headers: {
@@ -45,14 +48,27 @@ const ActiveUserChart = ({ height }) => {
         );
         console.log(newColors);
         setColors({ ...newColors });
+        setIsLoading(false);
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        console.error(err);
+        setIsLoading(false);
+      });
   }, []);
 
   return (
     <div style={{ height: `${height}px` }}>
-      <TimelineStackChart data={data} keys={keys} colors={colors} height="85" />
-      {console.log(keys)}
+      {isLoading ? (
+        <Skeleton variant="rect" height={height} width={300} />
+      ) : (
+        <TimelineStackChart
+          data={data}
+          keys={keys}
+          colors={colors}
+          height="85"
+        />
+      )}
+
       <StyledLegendContainer>
         {allKeys.map((legendKey) => {
           return (

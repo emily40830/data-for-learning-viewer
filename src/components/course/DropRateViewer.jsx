@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { defaultColors } from '../../util';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -7,6 +8,8 @@ import { rollup, sum } from 'd3';
 import DropRateValueCard from './DropRateValueCard';
 import DropRateHistogram from './DropRateHistogram';
 import DropRateByMemberChart from './DropRateByMemberChart';
+import { Typography } from '@material-ui/core';
+import { Skeleton } from '@material-ui/lab';
 
 const StyledValueHistContainer = styled.div`
   display: grid;
@@ -121,12 +124,14 @@ const DropRateViewer = ({ contentId }) => {
     <>
       <StyledValueHistContainer>
         {isLoading ? (
-          'loading'
+          <Typography variant="h1">
+            <Skeleton animation="wave" />
+          </Typography>
         ) : (
           <DropRateValueCard dropRate={dropRate} chartHeight={180} />
         )}
         {isLoading ? (
-          'loading'
+          <Skeleton animation="wave" />
         ) : (
           <DropRateHistogram
             currentUserDropRate={dropRate}
@@ -137,7 +142,7 @@ const DropRateViewer = ({ contentId }) => {
       </StyledValueHistContainer>
       <StyledChartContainer>
         {isLoading ? (
-          'loading'
+          <Skeleton animation="wave" />
         ) : (
           <DropRateByMemberChart
             viewedByMembers={viewingRankByMembers}

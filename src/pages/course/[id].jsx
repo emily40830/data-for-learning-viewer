@@ -85,9 +85,17 @@ const Course = ({ content, contentId }) => {
           <StyledChartCard title="Completed by time">
             <TimeLineForStackChart contentId={contentId} chartHeight="200" />
           </StyledChartCard>
-          <ChartCard title="Interval histogram">
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              height: '100%',
+            }}
+          ></div>
+          {/* <ChartCard title="Interval histogram">
             <IntervalHistogramChart contentId={contentId} />
-          </ChartCard>
+          </ChartCard> */}
         </StyledTimelinesContainer>
       </StyledChartContainer>
     </Layout>

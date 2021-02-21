@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+
 import styled from 'styled-components';
 import ViewListRoundedIcon from '@material-ui/icons/ViewListRounded';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
@@ -7,6 +9,9 @@ import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 
 const LogoArea = styled.div`
   height: 100px;
+  diaplay: flex;
+  align-items: center;
+  padding-top: 20px;
 `;
 
 const StyledNav = styled.nav`
@@ -50,7 +55,9 @@ const StyledNavLink = styled.a`
 const Sidebar = () => {
   return (
     <StyledNav>
-      <LogoArea>LOGO</LogoArea>
+      <LogoArea>
+        <Image src="/logo.png" width={150} height={37.5} />
+      </LogoArea>
       <StyledNavItem>
         <Link href={`/summary`}>
           <StyledNavLink>

@@ -117,24 +117,27 @@ const DropRateByMemberChart = ({ viewedByMembers, chartHeight }) => {
   }, [viewedByMembers, chartHeight, dimensions]);
 
   return (
-    <div
-      ref={wrapperRef}
-      style={{
-        height: `${
-          chartHeight ? chartHeight + margin.top + margin.bottom : 300
-        }px`,
-        width: '100%',
-        paddingTop: `${margin.top}px`,
-        paddingLeft: `${margin.left}px`,
-        paddingRight: `${margin.right}px`,
-        paddingBottom: `${margin.bottom}px`,
-      }}
-    >
-      <StyledSvg ref={svgRef}>
-        <g className="x-axis"></g>
-        <g className="y-axis"></g>
-      </StyledSvg>
-    </div>
+    <>
+      <h3>List of numbers of contents by viewers</h3>
+      <div
+        ref={wrapperRef}
+        style={{
+          height: `${
+            chartHeight ? chartHeight + margin.top + margin.bottom : 300
+          }px`,
+          width: '100%',
+          paddingTop: `${margin.top}px`,
+          paddingLeft: `${margin.left}px`,
+          paddingRight: `${margin.right}px`,
+          paddingBottom: `${margin.bottom}px`,
+        }}
+      >
+        <StyledSvg ref={svgRef}>
+          <g className="x-axis"></g>
+          <g className="y-axis"></g>
+        </StyledSvg>
+      </div>
+    </>
   );
 };
 
