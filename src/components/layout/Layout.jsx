@@ -2,8 +2,17 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import styled from 'styled-components';
 import Head from 'next/head';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 import FootBar from './FootBar';
 
+Router.onRouteChangeStart = (url) => {
+  console.log(url);
+  NProgress.start();
+};
+
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 const StyledWrapper = styled.div`
   display: flex;
 
@@ -30,6 +39,10 @@ const Layout = ({ title, children }) => {
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
+        />
       </Head>
       <Sidebar />
       <StyledContainer>{children}</StyledContainer>

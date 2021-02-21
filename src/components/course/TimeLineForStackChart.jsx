@@ -45,6 +45,12 @@ const TimeLineForStackChart = ({ contentId, chartHeight }) => {
       {isLoading ? (
         <div style={{ padding: '20px' }}>
           <Skeleton animation="wave" />
+          <br />
+          <Skeleton animation="wave" />
+          <br />
+          <Skeleton animation="wave" />
+          <br />
+          <Skeleton animation="wave" />
         </div>
       ) : (
         <StackAreaTimeLineChart
