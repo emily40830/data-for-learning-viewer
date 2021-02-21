@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import FootBar from './FootBar';
+import Header from './Header';
 
 Router.onRouteChangeStart = (url) => {
   console.log(url);
@@ -45,6 +46,7 @@ const Layout = ({ title, children }) => {
         />
       </Head>
       <Sidebar />
+      {/* <Header /> */}
       <StyledContainer>{children}</StyledContainer>
       <FootBar />
     </StyledWrapper>
