@@ -1,5 +1,5 @@
 import React from 'react';
-import openDB from '../../openDB';
+//import openDB from '../../openDB';
 import Layout from '../../components/layout/Layout';
 import styled from 'styled-components';
 import { formatUserName } from '../../util';
