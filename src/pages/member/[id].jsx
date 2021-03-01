@@ -1,12 +1,15 @@
 import React from 'react';
-import { baseURL } from '../../util';
+import openDB from '../../openDB';
 import Layout from '../../components/layout/Layout';
 import styled from 'styled-components';
 import { formatUserName } from '../../util';
 import ChartCard from '../../components/common/ChartCard';
 import SingleValueCard from '../../components/chart/SingleValueCard';
-import membersInfo from '../../../public/user_list.json';
+//import membersInfo from '../../../public/user_list.json';
 import ProgressHeatmap from '../../components/member/ProgressHeatmap';
+
+// import { open } from 'sqlite';
+// import sqlite3 from 'sqlite3';
 
 const Container = styled.div`
   display: grid;
@@ -128,10 +131,23 @@ export default Member;
 
 export const getServerSideProps = async ({ params }) => {
   //process.env.FOO
-
-  const member = membersInfo.filter(
-    (memberInfo) => memberInfo.member_id === params.id,
-  )[0];
+  const memberId = params.id;
+  // const openDB = async () => {
+  //   return open({
+  //     filename: '../../../data_viewer.db',
+  //     driver: sqlite3.Database,
+  //   });
+  // };
+  const db = await openDB();
+  //console.log(db);
+  const member = await db.get(
+    'select * from member where member_id = ?',
+    memberId,
+  );
+  //console.log('member: ', member);
+  // const member = membersInfo.filter(
+  //   (memberInfo) => memberInfo.member_id === params.id,
+  // )[0];
   return {
     props: {
       member,
