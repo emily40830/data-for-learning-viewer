@@ -130,27 +130,21 @@ const Member = ({ member }) => {
 export default Member;
 
 export const getServerSideProps = async ({ params }) => {
-  //process.env.FOO
   const memberId = params.id;
-  // const openDB = async () => {
-  //   return open({
-  //     filename: '../../../data_viewer.db',
-  //     driver: sqlite3.Database,
-  //   });
-  // };
   const db = await openDB();
-  //console.log(db);
   const member = await db.get(
     'select * from member where member_id = ?',
     memberId,
   );
   //console.log('member: ', member);
-  // const member = membersInfo.filter(
-  //   (memberInfo) => memberInfo.member_id === params.id,
-  // )[0];
+
   return {
     props: {
       member,
     },
   };
 };
+
+// const member = membersInfo.filter(
+//   (memberInfo) => memberInfo.member_id === params.id,
+// )[0];
