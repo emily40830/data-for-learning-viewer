@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { formatUserName } from '../../util';
+import { formatUserName } from '../../util/util';
 import TableRow from '../table/TableRow';
 import TableRowCell from '../table/TableRowCell';
 import HeadingItem from '../table/HeadingItem';

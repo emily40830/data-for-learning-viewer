@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Skeleton } from '@material-ui/lab';
 import TimelineStackChart from '../chart/TimelineStackChart';
 import styled from 'styled-components';
-import { defaultColors } from '../../util';
+import { defaultColors } from '../../util/util';
 import Legend from '../common/Legend';
 
 const StyledLegendContainer = styled.div`

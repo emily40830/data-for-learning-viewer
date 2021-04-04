@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import HelpOutline from "@material-ui/icons/HelpOutline";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -31,12 +32,13 @@ const StyledContainer = styled.div`
 
 const StyledCardTitle = styled.div``;
 
-const ChartCard = ({ title, children, className }) => {
+const ChartCard = ({ title, children, className, tooltip }) => {
   return (
     <StyledContainer className={className}>
       {/* <rect className="card__border"></rect> */}
       <div className="card__inner">
         <div className="card__title">{title}</div>
+        {tooltip ? <HelpOutline color="disabled" /> : ""}
       </div>
       {children}
       {/* <StyledCardBody height={height}>{children}</StyledCardBody> */}

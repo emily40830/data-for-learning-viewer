@@ -1,15 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { defaultColors } from '../../util';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { rollup, sum } from 'd3';
-import DropRateValueCard from './DropRateValueCard';
-import DropRateHistogram from './DropRateHistogram';
-import DropRateByMemberChart from './DropRateByMemberChart';
-import { Typography } from '@material-ui/core';
-import { Skeleton } from '@material-ui/lab';
+import { defaultColors } from "../../util/util";
+import { useState } from "react";
+import { useEffect } from "react";
+import { rollup, sum } from "d3";
+import DropRateValueCard from "./DropRateValueCard";
+import DropRateHistogram from "./DropRateHistogram";
+import DropRateByMemberChart from "./DropRateByMemberChart";
+import { Typography } from "@material-ui/core";
+import { Skeleton } from "@material-ui/lab";
 
 const StyledValueHistContainer = styled.div`
   display: grid;
@@ -21,6 +21,7 @@ const StyledValueHistContainer = styled.div`
 const StyledChartContainer = styled.div`
   flex: 1;
   height: 100%;
+  padding-left: 30px 0;
 `;
 
 const DropRateViewer = ({ contentId }) => {
@@ -40,10 +41,10 @@ const DropRateViewer = ({ contentId }) => {
     //     Accept: 'application/json',
     //   },
     // })
-    fetch('/content_max_rank.json', {
+    fetch("/content_max_rank.json", {
       headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
     })
       .then((res) => {

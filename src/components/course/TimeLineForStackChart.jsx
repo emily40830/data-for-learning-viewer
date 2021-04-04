@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { defaultColors } from '../../util';
+import { defaultColors } from '../../util/util';
 import { Skeleton } from '@material-ui/lab';
 import StackAreaTimeLineChart from '../chart/StackAreaTimeLineChart';
 

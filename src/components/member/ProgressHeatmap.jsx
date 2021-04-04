@@ -7,9 +7,8 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from '@material-ui/core/Typography';
-// import CalendarHeatmap from 'reactjs-calendar-heatmap';
-//import HeatMapDate from 'react-d3-heatmap';
-import { getColorsMapping } from '../../util';
+
+import { getColorsMapping } from '../../util/util';
 import { Skeleton } from '@material-ui/lab';
 
 const ProgressHeatmap = ({ memberId }) => {
@@ -38,7 +37,7 @@ const ProgressHeatmap = ({ memberId }) => {
 
         setProgresses(newData);
 
-        console.log(newData);
+        //console.log(newData);
         const userProgress = newData.map((eachData) => {
           return {
             date: new Date(eachData.date),

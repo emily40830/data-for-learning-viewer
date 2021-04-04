@@ -1,8 +1,8 @@
 import React from 'react';
-import { baseURL } from '../../util';
+import { baseURL } from '../../util/util';
 import Layout from '../../components/layout/Layout';
 import styled from 'styled-components';
-import { formatCourseName } from '../../util';
+import { formatCourseName } from '../../util/util';
 import ChartCard from '../../components/common/ChartCard';
 import SingleValueCard from '../../components/chart/SingleValueCard';
 import { useEffect } from 'react';

@@ -2,7 +2,7 @@ import React from 'react';
 import openDB from '../../openDB';
 import Layout from '../../components/layout/Layout';
 import styled from 'styled-components';
-import { formatUserName } from '../../util';
+import { formatUserName } from '../../util/util';
 import ChartCard from '../../components/common/ChartCard';
 import SingleValueCard from '../../components/chart/SingleValueCard';
 //import membersInfo from '../../../public/user_list.json';

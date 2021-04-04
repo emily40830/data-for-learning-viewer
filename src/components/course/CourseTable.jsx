@@ -9,7 +9,7 @@ import TableHeading from '../table/TableHeading';
 import HeadingButton from '../table/HeadingButton';
 import TableRow from '../table/TableRow';
 import TableRowCell from '../table/TableRowCell';
-import { formatCourseName, orderBy } from '../../util';
+import { formatCourseName, orderBy } from '../../util/util';
 
 const CourseTable = ({ contents }) => {
   const [direction, setDirection] = useState(null);

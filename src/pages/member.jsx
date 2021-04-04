@@ -7,7 +7,7 @@ import TableHeading from '../components/table/TableHeading';
 import HeadingButton from '../components/table/HeadingButton';
 import TableRow from '../components/table/TableRow';
 import TableRowCell from '../components/table/TableRowCell';
-import { formatUserName } from '../util';
+import { formatUserName } from '../util/util';
 import LoadingTable from '../components/common/LoadingTable';
 
 const StyledInputContainer = styled.div`
