@@ -1,10 +1,9 @@
-import React, { useRef, useEffect } from 'react';
-import styled from 'styled-components';
-import useResizeObserver from '../../hooks/useResizeObserver';
+import React, { useRef, useEffect } from "react";
+import styled from "styled-components";
+import useResizeObserver from "../../hooks/useResizeObserver";
 import {
   select,
   extent,
-  scaleLinear,
   max,
   axisBottom,
   axisLeft,
@@ -13,7 +12,7 @@ import {
   line,
   curveBasis,
   scaleSymlog,
-} from 'd3';
+} from "d3";
 
 const margin = { top: 20, right: 20, bottom: 30, left: 40 };
 
@@ -34,10 +33,6 @@ const TimelineStackChart = ({ data, keys, colors, height }) => {
       const { width, height } =
         dimensions || wrapperRef.current.getBoundingClientRect();
 
-      // canvas
-      //   .attr('width', `${width - margin.left - margin.right}px`)
-      //   .attr('height', `${height - margin.top - margin.bottom}px`);
-
       // scale
       const xScale = scaleTime()
         .domain(
@@ -54,8 +49,8 @@ const TimelineStackChart = ({ data, keys, colors, height }) => {
         .range([height, 0]);
 
       // render
-      canvas.select('.render-chart').remove();
-      const chartArea = canvas.append('g').attr('class', 'render-chart');
+      canvas.select(".render-chart").remove();
+      const chartArea = canvas.append("g").attr("class", "render-chart");
       //canvas.selectAll('.render-line').remove();
       for (let key of keys) {
         //console.log('here!');
@@ -75,13 +70,13 @@ const TimelineStackChart = ({ data, keys, colors, height }) => {
         //console.log(lineGenerator);
 
         chartArea
-          .append('path')
-          .attr('d', lineGenerator(newData))
-          .attr('class', 'render-line')
-          .attr('fill', 'none')
-          .attr('stroke', colors[key])
-          .attr('stroke-width', 1.5)
-          .style('mix-blend-mode', 'multiply');
+          .append("path")
+          .attr("d", lineGenerator(newData))
+          .attr("class", "render-line")
+          .attr("fill", "none")
+          .attr("stroke", colors[key])
+          .attr("stroke-width", 1.5)
+          .style("mix-blend-mode", "multiply");
       }
 
       // axis
@@ -89,31 +84,31 @@ const TimelineStackChart = ({ data, keys, colors, height }) => {
         .ticks(10)
         .tickSize(2)
         .tickPadding(5)
-        .tickFormat(timeFormat('%Y-%m-%d'));
+        .tickFormat(timeFormat("%Y-%m-%d"));
       canvas
-        .select('.x-axis')
-        .attr('transform', `translate(0,${height})`)
+        .select(".x-axis")
+        .attr("transform", `translate(0,${height})`)
         .call(xAxis)
-        .call((g) => g.select('.x-axis>.domain').attr('stroke', 'darkgrey'))
+        .call((g) => g.select(".x-axis>.domain").attr("stroke", "darkgrey"))
         .call((g) =>
           g
-            .selectAll('.x-axis>.tick>text')
-            .attr('fill', 'darkgrey')
-            .style('font-size', '8'),
+            .selectAll(".x-axis>.tick>text")
+            .attr("fill", "darkgrey")
+            .style("font-size", "8"),
         );
 
       const yAxis = axisLeft(yScale)
         .tickValues([0, 20, 50, 100, 500, 1000, 2000, 4000])
         .tickSize(0);
       canvas
-        .select('.y-axis')
+        .select(".y-axis")
         .call(yAxis)
-        .call((g) => g.select('.y-axis>.domain').attr('stroke', 'none'))
+        .call((g) => g.select(".y-axis>.domain").attr("stroke", "none"))
         .call((g) =>
           g
-            .selectAll('.y-axis>.tick>text')
-            .attr('fill', 'darkgrey')
-            .style('font-size', '10'),
+            .selectAll(".y-axis>.tick>text")
+            .attr("fill", "darkgrey")
+            .style("font-size", "10"),
         );
     }
   }, [data, colors, keys, dimensions]);
@@ -122,8 +117,8 @@ const TimelineStackChart = ({ data, keys, colors, height }) => {
     <div
       ref={wrapperRef}
       style={{
-        height: height ? `${height}%` : '100%',
-        width: '100%',
+        height: height ? `${height}%` : "100%",
+        width: "100%",
         paddingTop: `${margin.top}px`,
         paddingLeft: `${margin.left}px`,
         paddingRight: `${margin.right}px`,

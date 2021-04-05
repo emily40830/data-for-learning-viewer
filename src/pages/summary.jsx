@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import Layout from '../components/layout/Layout';
-import SingleValueCard from '../components/chart/SingleValueCard';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import Layout from "../components/layout/Layout";
+import SingleValueCard from "../components/chart/SingleValueCard";
 //import ChartContainer from '../components/common/ChartCard';
-import ChartCard from '../components/common/ChartCard';
-import ActiveUserChart from '../components/summary/ActiveUserChart';
-import TopUserTable from '../components/summary/TopUserTable';
-import TopCourseTable from '../components/summary/TopCourseTable';
+import ChartCard from "../components/common/ChartCard";
+import ActiveUserChart from "../components/summary/ActiveUserChart";
+import TopUserTable from "../components/summary/TopUserTable";
+import TopCourseTable from "../components/summary/TopCourseTable";
 
 const StyledSummaryContainer = styled.div`
   display: grid;
@@ -45,28 +45,31 @@ const StyledTopCourseAndMember = styled.div`
 const getSummaryValues = async () => {
   return [
     {
-      title: 'Enrolled',
-      subtitle: ' in course',
-      value: '50,000',
-      tooltip: '',
+      title: "Enrolled",
+      subtitle: " in course",
+      value: "55,000",
+      tooltip:
+        "總計從平台上線以來註冊的不重複帳號個數(目前為非真實數據結果，僅供參考)",
     },
     {
-      title: 'Started',
-      subtitle: ' in course',
-      value: '10,300',
-      tooltip: '',
+      title: "Started",
+      subtitle: " in course",
+      value: "40,300",
+      tooltip:
+        "總計從平台上線以來，開始學習的人數，以點擊過至少一個content即列入計算(目前為非真實數據結果，僅供參考)",
     },
     {
-      title: 'Engaged',
-      subtitle: ' in course',
-      value: '1,000',
-      tooltip: '',
+      title: "Engaged",
+      subtitle: " in course",
+      value: "10,000",
+      tooltip:
+        "總計從平台上線以來，有至少一個content閱覽超過80%以上的人數(目前為非真實數據結果，僅供參考)",
     },
     {
-      title: 'High completed rate',
-      subtitle: '',
-      value: '85.3',
-      tooltip: '',
+      title: "High completed rate",
+      subtitle: "",
+      value: "85.3",
+      tooltip: "",
     },
   ];
 };

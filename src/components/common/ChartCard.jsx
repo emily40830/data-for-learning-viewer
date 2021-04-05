@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import HelpOutline from "@material-ui/icons/HelpOutline";
+import { Help } from "@material-ui/icons";
+import ToolTip from "../common/ToolTip";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -19,7 +20,7 @@ const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 10px 25px;
   }
   .card__title {
@@ -30,15 +31,24 @@ const StyledContainer = styled.div`
   }
 `;
 
-const StyledCardTitle = styled.div``;
-
 const ChartCard = ({ title, children, className, tooltip }) => {
   return (
     <StyledContainer className={className}>
       {/* <rect className="card__border"></rect> */}
       <div className="card__inner">
         <div className="card__title">{title}</div>
-        {tooltip ? <HelpOutline color="disabled" /> : ""}
+        {tooltip ? (
+          <span class="singleValue__tooltip">
+            <ToolTip title={<p>{tooltip}</p>}>
+              <Help
+                style={{ color: "var(--text-color-third)", opacity: ".5" }}
+                fontSize="2rem"
+              />
+            </ToolTip>{" "}
+          </span>
+        ) : (
+          ""
+        )}
       </div>
       {children}
       {/* <StyledCardBody height={height}>{children}</StyledCardBody> */}

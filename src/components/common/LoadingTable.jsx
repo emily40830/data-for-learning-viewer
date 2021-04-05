@@ -10,32 +10,32 @@ const LoadingTable = () => {
         <TableRowCell align="left">
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell notShowInMobile={true}>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
@@ -44,32 +44,32 @@ const LoadingTable = () => {
         <TableRowCell align="left">
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell notShowInMobile={true}>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
@@ -78,32 +78,32 @@ const LoadingTable = () => {
         <TableRowCell align="left">
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell notShowInMobile={true}>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
@@ -112,32 +112,32 @@ const LoadingTable = () => {
         <TableRowCell align="left">
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell notShowInMobile={true}>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
@@ -146,67 +146,134 @@ const LoadingTable = () => {
         <TableRowCell align="left">
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell notShowInMobile={true}>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
       </TableRow>
-
       <TableRow>
         <TableRowCell align="left">
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell notShowInMobile={true}>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
         <TableRowCell>
           <Skeleton
             variant="rect"
-            width="auto"
-            height="50px"
+            width="100px"
+            height="30px"
+            animation="wave"
+          />
+        </TableRowCell>
+      </TableRow>
+      <TableRow>
+        <TableRowCell align="left">
+          <Skeleton
+            variant="rect"
+            width="100px"
+            height="30px"
+            animation="wave"
+          />
+        </TableRowCell>
+        <TableRowCell notShowInMobile={true}>
+          <Skeleton
+            variant="rect"
+            width="100px"
+            height="30px"
+            animation="wave"
+          />
+        </TableRowCell>
+        <TableRowCell>
+          <Skeleton
+            variant="rect"
+            width="100px"
+            height="30px"
+            animation="wave"
+          />
+        </TableRowCell>
+        <TableRowCell>
+          <Skeleton
+            variant="rect"
+            width="100px"
+            height="30px"
+            animation="wave"
+          />
+        </TableRowCell>
+      </TableRow>
+      <TableRow>
+        <TableRowCell align="left">
+          <Skeleton
+            variant="rect"
+            width="100px"
+            height="30px"
+            animation="wave"
+          />
+        </TableRowCell>
+        <TableRowCell notShowInMobile={true}>
+          <Skeleton
+            variant="rect"
+            width="100px"
+            height="30px"
+            animation="wave"
+          />
+        </TableRowCell>
+        <TableRowCell>
+          <Skeleton
+            variant="rect"
+            width="100px"
+            height="30px"
+            animation="wave"
+          />
+        </TableRowCell>
+        <TableRowCell>
+          <Skeleton
+            variant="rect"
+            width="100px"
+            height="30px"
             animation="wave"
           />
         </TableRowCell>
