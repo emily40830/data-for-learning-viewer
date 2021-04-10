@@ -1,6 +1,6 @@
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import httpAuthCheck from '../util/httpAuthCheck';
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import httpAuthCheck from "../util/httpAuthCheck";
 
 const Redirect = ({ to }) => {
   const router = useRouter();
@@ -13,8 +13,6 @@ const Redirect = ({ to }) => {
 };
 // RWD conditional rendering
 export default function Home({}) {
-  const router = useRouter();
-
   return <Redirect to="/summary" />;
 }
 
