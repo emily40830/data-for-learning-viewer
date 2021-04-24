@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import Layout from '../components/layout/Layout';
-import SearchInput from '../components/common/SearchInput';
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import Layout from "../components/layout/Layout";
+import SearchInput from "../components/common/SearchInput";
 
-import LoadingTable from '../components/common/LoadingTable';
-import CourseTable from '../components/course/CourseTable';
-import TableHeading from '../components/table/TableHeading';
-import HeadingButton from '../components/table/HeadingButton';
+import LoadingTable from "../components/common/LoadingTable";
+import CourseTable from "../components/course/CourseTable";
+import TableHeading from "../components/table/TableHeading";
+import HeadingButton from "../components/table/HeadingButton";
 
 const StyledInputContainer = styled.div`
   margin-bottom: 40px;
@@ -31,7 +31,7 @@ const course = () => {
   const [isLoading, setLoading] = useState(false);
   const [videos, setVideos] = useState([]);
   const [filteredContents, setFilteredContents] = useState([]);
-  const [keyword, setKeyword] = useState('');
+  const [keyword, setKeyword] = useState("");
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -40,17 +40,18 @@ const course = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('/video_list.json', {
+
+    fetch("/video_list.json", {
       headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
     })
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setVideos([...data]);
+        setVideos(data);
         setFilteredContents([...data]);
         setLoading(false);
         // const newUser = data.map((d) => {
@@ -65,7 +66,7 @@ const course = () => {
   }, []);
 
   useEffect(() => {
-    if (keyword === '') {
+    if (keyword === "") {
       setFilteredContents(videos);
     } else {
       const filteredContents = videos.filter((content) =>
@@ -100,7 +101,7 @@ const course = () => {
               <div>drop rate</div>
             </HeadingButton>
           </TableHeading>
-          <div style={{ height: '600px', overflowY: 'scroll' }}>
+          <div style={{ height: "600px", overflowY: "scroll" }}>
             <LoadingTable />
           </div>
         </div>
