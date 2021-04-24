@@ -1,12 +1,12 @@
-import React from 'react';
-import openDB from '../../openDB';
-import Layout from '../../components/layout/Layout';
-import styled from 'styled-components';
-import { formatUserName } from '../../util/util';
-import ChartCard from '../../components/common/ChartCard';
-import SingleValueCard from '../../components/chart/SingleValueCard';
-//import membersInfo from '../../../public/user_list.json';
-import ProgressHeatmap from '../../components/member/ProgressHeatmap';
+import React from "react";
+import openDB from "../../openDB";
+import Layout from "../../components/layout/Layout";
+import styled from "styled-components";
+import { formatUserName } from "../../util/util";
+import ChartCard from "../../components/common/ChartCard";
+import SingleValueCard from "../../components/chart/SingleValueCard";
+import membersInfo from "../../../public/user_list.json";
+import ProgressHeatmap from "../../components/member/ProgressHeatmap";
 
 // import { open } from 'sqlite';
 // import sqlite3 from 'sqlite3';
@@ -131,11 +131,14 @@ export default Member;
 
 export const getServerSideProps = async ({ params }) => {
   const memberId = params.id;
-  const db = await openDB();
-  const member = await db.get(
-    'select * from member where member_id = ?',
-    memberId,
-  );
+  const member = membersInfo.filter(
+    (memberInfo) => memberInfo.member_id === memberId,
+  )[0];
+  // const db = await openDB();
+  // const member = await db.get(
+  //   'select * from member where member_id = ?',
+  //   memberId,
+  // );
   //console.log('member: ', member);
 
   return {
@@ -144,7 +147,3 @@ export const getServerSideProps = async ({ params }) => {
     },
   };
 };
-
-// const member = membersInfo.filter(
-//   (memberInfo) => memberInfo.member_id === params.id,
-// )[0];
