@@ -1,5 +1,5 @@
 import React from "react";
-import openDB from "../../openDB";
+
 import Layout from "../../components/layout/Layout";
 import styled from "styled-components";
 import { formatUserName } from "../../util/util";
@@ -8,6 +8,7 @@ import SingleValueCard from "../../components/chart/SingleValueCard";
 import membersInfo from "../../../public/user_list.json";
 import ProgressHeatmap from "../../components/member/ProgressHeatmap";
 
+//import openDB from "../../openDB";
 // import { open } from 'sqlite';
 // import sqlite3 from 'sqlite3';
 
@@ -130,9 +131,9 @@ const Member = ({ member }) => {
 export default Member;
 
 export const getServerSideProps = async ({ params }) => {
-  const memberId = params.id;
+  //const memberId = params.id;
   const member = membersInfo.filter(
-    (memberInfo) => memberInfo.member_id === memberId,
+    (memberInfo) => memberInfo.member_id === params.id,
   )[0];
   // const db = await openDB();
   // const member = await db.get(
